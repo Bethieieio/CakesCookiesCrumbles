@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+import { Login } from './components/pages/login';
+import { Signup } from './components/pages/signup';
 
 function App() {
   return (
@@ -18,6 +26,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <BrowserRouter>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />}/>
+            <Route path="/" element={<h1>Home</h1>} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
