@@ -6,6 +6,7 @@ import {
   Routes,
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './axiosDefaults';
 
 import { Login } from './components/pages/login';
 import { Signup } from './components/pages/signup';
