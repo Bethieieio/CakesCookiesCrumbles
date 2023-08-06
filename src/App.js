@@ -11,6 +11,7 @@ import './axiosDefaults';
 import { Login } from './components/pages/login';
 import { Signup } from './components/pages/signup';
 import { CurrentUserProvider } from './components/context/CurrentUserContext';
+import { Navbar } from './components/navbar';
 
 function App() {
   return (
@@ -18,18 +19,7 @@ function App() {
       <CurrentUserProvider>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
+            <Navbar></Navbar>
           </header>
               <Routes>
                 <Route path="/login" element={<Login />} />
