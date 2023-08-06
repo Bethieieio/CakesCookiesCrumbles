@@ -8,7 +8,7 @@ import Alert from 'react-bootstrap/Alert'
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useSetCurrentUser } from '../context/CurrentUserContext';
+import { useCurrentUser, useSetCurrentUser } from '../context/CurrentUserContext';
 
 export const Login = () => {
     const [username, setUsername] = useState('')
