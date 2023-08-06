@@ -16,6 +16,9 @@ export const Login = () => {
     const [errors, setErrors] = useState({});
     const navigate = useNavigate()
     const setCurrentUser = useSetCurrentUser()
+    const currentUser = useCurrentUser()
+
+    if (currentUser) navigate('/')
 
     const handleSubmit = async (event) => {
         event.preventDefault();

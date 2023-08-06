@@ -8,7 +8,7 @@ import Alert from 'react-bootstrap/Alert'
 import { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { useSetCurrentUser } from '../context/CurrentUserContext';
+import { useCurrentUser, useSetCurrentUser } from '../context/CurrentUserContext';
 
 export const Signup = () => {
     // const [email, setEmail] = useState('')
@@ -17,7 +17,9 @@ export const Signup = () => {
     const [password2, setPassword2] = useState('')
     const [errors, setErrors] = useState({});
     const navigate = useNavigate()
-    const setCurrentUser = useSetCurrentUser()
+    const currentUser = useCurrentUser()
+
+    if (currentUser) navigate('/')
 
     const handleSubmit = async (event) => {
         event.preventDefault();
