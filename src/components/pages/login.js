@@ -54,9 +54,6 @@ export const Login = () => {
                         {errors?.password?.map((message, idx) => 
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        </Form.Group>
-
                         <Button variant="primary" type="submit">
                             Submit
                         </Button>
