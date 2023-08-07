@@ -10,6 +10,7 @@ import './axiosDefaults';
 
 import { Login } from './components/pages/login';
 import { Signup } from './components/pages/signup';
+import { CreateRecipe } from './components/pages/createRecipe';
 import { CurrentUserProvider } from './components/context/CurrentUserContext';
 import { Navbar } from './components/navbar';
 
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />}/>
                 <Route path="/" element={<h1>Home</h1>} />
+                <Route path="/recipe/create" element={<CreateRecipe/>} />
               </Routes>
         </div>
       </CurrentUserProvider>

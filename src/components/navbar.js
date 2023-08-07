@@ -32,7 +32,7 @@ export const Navbar = () => {
                 </Nav>)
                 :
                 (<Nav className="justify-content-end">
-                <Nav.Link onClick={() => {navigate('/Create Recipe')}}> Create Recipe </Nav.Link>
+                <Nav.Link onClick={() => {navigate('/recipe/create')}}> Create Recipe </Nav.Link>
                 <Nav.Link onClick={() => onSignOut()}> Sign Out </Nav.Link>
             </Nav>)}
 
