@@ -14,17 +14,36 @@ import { useCurrentUser } from '../context/CurrentUserContext';
 export const CreateRecipe = () => {
     const navigate = useNavigate()
     const user = useCurrentUser()
-
+    const [errors, setErrors] = useState()
     const [recipe, setRecipe] = useState({
-        title: ''
+        title: '',
+        description: '',
+        instructions: '',
+        ingredients: '',
     })
-    const errors = {}
+
     if (
         user === null
     ) navigate('/login/')
-    const handleSubmit = () => {
 
+
+    const handleSubmit = async (event) => {
+        event.preventDefault()
+        const data = new FormData()
+        Object.keys(recipe).forEach(key => data.append(key, recipe[key]))
+
+        try{
+            const { data: result } = await axios.post('/recipes/', data, {
+                headers: {
+                    'Content-Type':  'multipart/form-data',
+                },
+            })
+            navigate('/')
+        } catch(err){
+            setErrors(err.response?.data)
+        }
     }
+
     return (
         <Container fluid>
             <Row>
@@ -83,10 +102,10 @@ export const CreateRecipe = () => {
 
 <Form.Group className="mb-3" controlId="image">
                             <Form.Label>Image</Form.Label>
-                            <Form.Control type="file" placeholder="Image" value={recipe.image} onChange={(event) => {
+                            <Form.Control type="file" placeholder="Image" onChange={(event) => {
                                 setRecipe({
                                     ...recipe,
-                                    image: event.target.value,
+                                    image: event.target.files[0],
                                 })
                             }}/>
                         </Form.Group>
