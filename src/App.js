@@ -13,6 +13,7 @@ import { Signup } from './components/pages/signup';
 import { CreateRecipe } from './components/pages/createRecipe';
 import { CurrentUserProvider } from './components/context/CurrentUserContext';
 import { Navbar } from './components/navbar';
+import { SingleRecipe } from './components/pages/singleRecipe';
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
                 <Route path="/signup" element={<Signup />}/>
                 <Route path="/" element={<h1>Home</h1>} />
                 <Route path="/recipe/create" element={<CreateRecipe/>} />
+                <Route path="/recipe/:id" element={<SingleRecipe  />} />
+
               </Routes>
         </div>
       </CurrentUserProvider>
