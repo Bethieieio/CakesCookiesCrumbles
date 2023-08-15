@@ -7,8 +7,10 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './singleRecipe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/fontawesome-free-solid';
+import { faHeart, faStar } from '@fortawesome/fontawesome-free-solid';
 import { faHeart as faHeartO } from '@fortawesome/free-regular-svg-icons'
+import { faStar as faStarO } from '@fortawesome/free-regular-svg-icons';
+
 
 export const SingleRecipe = () => {
     const params = useParams()
@@ -28,10 +30,18 @@ export const SingleRecipe = () => {
                 <Col md={{ span: 10, offset: 1 }}>
                     
                     <Card>
-                    <Card.Header>{recipe ?  <>
-                        <h3>{recipe.title}</h3>
-                        <FontAwesomeIcon icon={faHeartO} />
-                    </> : 'Not Found'}</Card.Header>
+                    <Card.Header>
+                        
+                        
+                        {recipe ?   
+                        <Container>
+                            <Row>
+                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faStarO} /></Col>
+                                <Col className="d-flex justify-content-center"> <h3>{recipe.title}</h3> </Col>
+                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faHeartO} /></Col>
+                            </Row>
+                        </Container> : 'Not Found'}
+                    </Card.Header>
                     <Card.Body>
                         {recipe ? (<>
                         <Container>

@@ -22,7 +22,7 @@ export const Navbar = () => {
     return(
     <BootstrapNavbar expand="lg" className="bg-body-tertiary">
         <Container>
-            <BootstrapNavbar.Brand href="#home">React-Bootstrap</BootstrapNavbar.Brand>
+            <BootstrapNavbar.Brand href="#home">Cakes, Cookies and Crumbles</BootstrapNavbar.Brand>
             <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
             <BootstrapNavbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
 
