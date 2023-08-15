@@ -14,6 +14,7 @@ import { CreateRecipe } from './components/pages/createRecipe';
 import { CurrentUserProvider } from './components/context/CurrentUserContext';
 import { Navbar } from './components/navbar';
 import { SingleRecipe } from './components/pages/singleRecipe';
+import { EditRecipe } from './components/pages/editRecipe';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/" element={<h1>Home</h1>} />
                 <Route path="/recipe/create" element={<CreateRecipe/>} />
                 <Route path="/recipe/:id" element={<SingleRecipe  />} />
+                <Route path="/editrecipe/:id" element={<EditRecipe />} /> 
 
               </Routes>
         </div>
