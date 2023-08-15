@@ -30,9 +30,14 @@ export const EditRecipe = () => {
 
     useEffect(() => {
         const fetchRecipe = async() => {
-            const result = await axios.get(`recipes/${id}`)
+            let result
+            try{
+                result = await axios.get(`recipes/${id}`)
+            }catch(error){
+                if(error.response.status !== 404) throw error
+            }
 
-            if (result.status === 200){
+            if (result && result.status === 200){
                 setRecipe({
                     title: result.data.title,
                     description: result.data.description,
@@ -68,9 +73,9 @@ export const EditRecipe = () => {
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                     <Card>
-                    <Card.Header as="h5">Create a Recipe</Card.Header>
+                    <Card.Header as="h5">Edit {recipe.title ? recipe.title : 'recipe'}</Card.Header>
                     <Card.Body>
-                        {loading ? (<>Loading...</>) : (
+                        {loading ? (<>Loading...</>) : recipe.title ? (
                             <Form onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="title">
                                 <Form.Label>Title</Form.Label>
@@ -140,7 +145,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
                         </Form>
-                        )}
+                        ) : <>We lost your recipe!</>}
                     </Card.Body>
                     </Card>
                 </Col>
