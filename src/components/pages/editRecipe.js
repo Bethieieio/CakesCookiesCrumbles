@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCurrentUser } from '../context/CurrentUserContext';
+import { Modal } from 'react-bootstrap';
 
 
 export const EditRecipe = () => {
@@ -23,6 +24,8 @@ export const EditRecipe = () => {
     })
     const [loading, setLoading] = useState(true)
     const {id} = useParams()
+
+    const [openModal, setOpenModal] = useState(false)
 
     if (
         user === null
@@ -67,13 +70,23 @@ export const EditRecipe = () => {
             setErrors(err.response?.data)
         }
     }
+    const deleteRecipe = async() => {
+        await axios.delete(`/recipes/${id}/`)
+        navigate('/')
+
+    }
 
     return (
         <Container fluid>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                     <Card>
-                    <Card.Header as="h5">Edit {recipe.title ? recipe.title : 'recipe'}</Card.Header>
+                    <Card.Header>Edit {recipe.title ? <>
+                        <h5> {recipe.title} </h5>
+                        <button onClick={() => {
+                            setOpenModal(true)
+                        }}>Delete Recipe</button>
+                    </>: 'recipe'}</Card.Header>
                     <Card.Body>
                         {loading ? (<>Loading...</>) : recipe.title ? (
                             <Form onSubmit={handleSubmit}>
@@ -150,6 +163,21 @@ export const EditRecipe = () => {
                     </Card>
                 </Col>
             </Row>
+            <Modal show={openModal} onHide={() => {
+                setOpenModal(false)
+            }}>
+                <Modal.Body>
+                    Are you sure you want to delete this recipe?
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button onClick={() => {
+                        deleteRecipe()
+                    }}>Yes</Button>
+                    <Button onClick={() => {
+                        setOpenModal(false)
+                    }}>No</Button>
+                </Modal.Footer>
+            </Modal>
     </Container>
     )
 }
