@@ -2,6 +2,7 @@ import { faHeart } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Badge, Card, Col, Container, Image, Row, Stack } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
+import { FavouriteToggle } from "./favouriteToggle"
 
 export const Recipe = (props) => {
     const {recipe} = props
@@ -17,7 +18,7 @@ export const Recipe = (props) => {
                             }}fluid src={recipe.image}/>
                         </Col>
                         <Col xs={3}>
-                            <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon>
+                            <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
                         </Col>
                     </Row>
                 </Container>
