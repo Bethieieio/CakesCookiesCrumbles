@@ -21,6 +21,7 @@ export const EditRecipe = () => {
         description: '',
         instructions: '',
         ingredients: '',
+        // categories: [],
     })
     const [loading, setLoading] = useState(true)
     const {id} = useParams()
@@ -46,6 +47,7 @@ export const EditRecipe = () => {
                     description: result.data.description,
                     ingredients:  result.data.ingredients,
                     instructions: result.data.instructions,
+                    // categories: result.data.categories,
                 })
             }
             setLoading(false)
@@ -57,7 +59,7 @@ export const EditRecipe = () => {
     const handleSubmit = async (event) => {
         event.preventDefault()
         const data = new FormData()
-        Object.keys(recipe).forEach(key => data.append(key, recipe[key]))
+        Object.keys(recipe).forEach(key => Array.isArray(recipe[key]) ? data.append(key, JSON.stringify(recipe[key])) : data.append(key, recipe[key]))
 
         try{
             const { data: result } = await axios.put(`/recipes/${id}/`, data, {
@@ -113,6 +115,24 @@ export const EditRecipe = () => {
                             </Form.Group>
                             {errors?.description?.map((message, idx) => 
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
+
+                                {/* <Form.Group className='mb-3' controlId='categories'>
+                                    <Form.Label>
+                                        Categories
+                                    </Form.Label>
+                                    <Form.Select multiple onChange={(event) => {
+                                    setRecipe({
+                                        ...recipe,
+                                        categories: [...event.target.options].filter(option => option.selected).map(option => ({ name: option.value })),
+                                    })
+                                }}>
+                                        <option value='Cakes'>Cakes</option>
+                                        <option value='Cookies'>Cookies</option>
+                                        <option value='Crumbles'>Crumbles</option>
+                                    </Form.Select>
+                                </Form.Group> */}
+                                {/* {errors?.categories?.map((message, idx) => 
+                            <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)} */}
     
     <Form.Group className="mb-3" controlId="ingredients">
                                 <Form.Label>Ingredients</Form.Label>

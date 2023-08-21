@@ -1,6 +1,6 @@
 import { faHeart } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { Card, Col, Container, Image, Row } from "react-bootstrap"
+import { Badge, Card, Col, Container, Image, Row, Stack } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 
 export const Recipe = (props) => {
@@ -27,6 +27,9 @@ export const Recipe = (props) => {
                                 navigate(`/recipe/${recipe.id}`)
                             }}>
                             <h4>{recipe.title}</h4>
+                            <Stack direction='horizontal' gap='2'>
+                                {recipe.categories.map(category => <Badge>{category.name}</Badge>)}
+                            </Stack>
                             <p>{recipe.description}</p>
                         </Col>
                     </Row>

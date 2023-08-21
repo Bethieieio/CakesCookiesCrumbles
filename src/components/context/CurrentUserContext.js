@@ -31,7 +31,7 @@ export const CurrentUserProvider = ({children}) => {
         axiosReq.interceptors.request.use(
             async (config) => {
                 try {
-                    await axios.post('/token/refresh')
+                    await axios.post('/token/refresh/')
                 } catch(err) {
                     setCurrentUser(prevCurrentUser => {
                         if (prevCurrentUser){
@@ -53,7 +53,7 @@ export const CurrentUserProvider = ({children}) => {
             async (err) => {
                 if (err.response?.status === 401){
                     try {
-                        await axios.post('/token/refresh')
+                        await axios.post('/token/refresh/')
                     } catch(err) {
                         setCurrentUser(prevCurrentUser => {
                             if (prevCurrentUser){
