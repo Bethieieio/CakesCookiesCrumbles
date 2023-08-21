@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faStar } from '@fortawesome/fontawesome-free-solid';
 import { faHeart as faHeartO } from '@fortawesome/free-regular-svg-icons'
 import { faStar as faStarO } from '@fortawesome/free-regular-svg-icons';
+import { FavouriteToggle } from '../favouriteToggle';
 
 
 export const SingleRecipe = () => {
@@ -38,7 +39,7 @@ export const SingleRecipe = () => {
                             <Row>
                                 <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faStarO} /></Col>
                                 <Col className="d-flex justify-content-center"> <h3>{recipe.title}</h3> </Col>
-                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faHeartO} /></Col>
+                                <Col className="d-flex justify-content-center"><FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} /></Col>
                             </Row>
                         </Container> : 'Not Found'}
                     </Card.Header>
