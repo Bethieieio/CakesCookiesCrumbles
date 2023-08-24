@@ -20,6 +20,7 @@ export const CreateRecipe = () => {
         description: '',
         instructions: '',
         ingredients: '',
+        categories: [],
     })
 
     if (
@@ -30,7 +31,9 @@ export const CreateRecipe = () => {
     const handleSubmit = async (event) => {
         event.preventDefault()
         const data = new FormData()
-        Object.keys(recipe).forEach(key => data.append(key, recipe[key]))
+        Object.keys(recipe).filter(key => key !== 'categories').forEach(key => data.append(key, recipe[key]))
+
+        data.append('categories', JSON.stringify(recipe['categories']))
 
         try{
             const { data: result } = await axios.post('/recipes/', data, {
@@ -75,6 +78,24 @@ export const CreateRecipe = () => {
                         </Form.Group>
                         {errors?.description?.map((message, idx) => 
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
+
+<Form.Group className='mb-3' controlId='categories'>
+                                    <Form.Label>
+                                        Categories
+                                    </Form.Label>
+                                    <Form.Select multiple onChange={(event) => {
+                                    setRecipe({
+                                        ...recipe,
+                                        categories: [...event.target.options].filter(option => option.selected).map(option => ({ name: option.value })),
+                                    })
+                                }}>
+                                        <option selected={recipe.categories.map(cat => cat.name).includes('Cakes')} value='Cakes'>Cakes</option>
+                                        <option selected={recipe.categories.map(cat => cat.name).includes('Cookies')} value='Cookies'>Cookies</option>
+                                        <option selected={recipe.categories.map(cat => cat.name).includes('Crumbles')} value='Crumbles'>Crumbles</option>
+                                    </Form.Select>
+                                </Form.Group>
+                                {errors?.categories?.map((message, idx) => 
+                            <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className="mb-3" controlId="ingredients">
                             <Form.Label>Ingredients</Form.Label>
