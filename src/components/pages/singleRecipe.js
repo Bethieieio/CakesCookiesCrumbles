@@ -11,12 +11,13 @@ import { faHeart, faStar } from '@fortawesome/fontawesome-free-solid';
 import { faHeart as faHeartO } from '@fortawesome/free-regular-svg-icons'
 import { faStar as faStarO } from '@fortawesome/free-regular-svg-icons';
 import { FavouriteToggle } from '../favouriteToggle';
+import { RatingModal } from '../ratingModal';
 
 
 export const SingleRecipe = () => {
     const params = useParams()
     const [recipe ,setRecipe] = useState()
-    console.log(params);
+    const [ratingModalOpen, setRatingModalOpen] = useState(false)
     const getRecipe = async() => {
         const recipe = await axios.get(`/recipes/${params.id}`)
         console.log(recipe)
@@ -37,7 +38,9 @@ export const SingleRecipe = () => {
                         {recipe ?   
                         <Container>
                             <Row>
-                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faStarO} /></Col>
+                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faStarO} onClick={() => {
+                                    setRatingModalOpen(true)
+                                }}/></Col>
                                 <Col className="d-flex justify-content-center"> <h3>{recipe.title}</h3> </Col>
                                 <Col className="d-flex justify-content-center"><FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} /></Col>
                             </Row>
@@ -61,6 +64,7 @@ export const SingleRecipe = () => {
                                     {recipe.instructions.split('\n').map((line)=> <p key={line}>{line}</p>)}
                                 </Col>
                             </Row>
+                            <RatingModal title={recipe.title} open={ratingModalOpen} onClose={setRatingModalOpen} id={recipe.id}/>
                         </Container>
                         </>): (<>
                         loading or not found </>)}
