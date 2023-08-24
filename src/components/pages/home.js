@@ -40,7 +40,7 @@ export const Home = () => {
         <>
         <Container>
             <Row>
-                {recipes.map(recipe => <Recipe recipe={recipe}/>)}
+                {recipes.map(recipe => <Recipe key={`${recipe.id}-${recipe.title}`} recipe={recipe}/>)}
             </Row>
             <Row>
                 <Col sm={{

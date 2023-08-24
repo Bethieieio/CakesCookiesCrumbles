@@ -29,7 +29,7 @@ export const Recipe = (props) => {
                             }}>
                             <h4>{recipe.title}</h4>
                             <Stack direction='horizontal' gap='2'>
-                                {recipe.categories.map(category => <Badge>{category.name}</Badge>)}
+                                {recipe.categories.map(category => <Badge key={`${category.name}-${recipe.id}`}>{category.name}</Badge>)}
                             </Stack>
                             <p>{recipe.description}</p>
                         </Col>
