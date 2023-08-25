@@ -45,6 +45,10 @@ Some of the layout has changed since creating the wireframes eg: new page for si
 ![Create a Recipe](assets/readme-images/wireframe2.png)
 ![Edit a recipe](assets/readme-images/wireframe3.png)
 ![Single Recipe](assets/readme-images/wireframe4.png)
-![Rating and Delete recipe modal](assets/readme-images/wireframe5.png)
-
+![Rating, logout and Delete recipe modal](assets/readme-images/wireframe5.png)
 [Back to top](#contents)
+
+### Components
+ReactJS makes it easy to reuse components throughout the application.
+This is a flowchart to see the parent/child relationships of each component.
+![Component Flowchart](assets/readme-images/component-flochart.png)

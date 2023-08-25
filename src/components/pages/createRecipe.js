@@ -33,7 +33,7 @@ export const CreateRecipe = () => {
         const data = new FormData()
         Object.keys(recipe).filter(key => key !== 'categories').forEach(key => data.append(key, recipe[key]))
 
-        data.append('categories', JSON.stringify(recipe['categories']))
+        data.append('categories', JSON.stringify(recipe['categories']))     
 
         try{
             const { data: result } = await axios.post('/recipes/', data, {
