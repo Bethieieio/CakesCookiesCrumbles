@@ -35,3 +35,16 @@ In Code Code Institutes words:
 10. The user needs to be able to edit and delete a recipe of choice with ease.
 11. To filter their own recipe from all the other users recipes.
 12. Users should only be able create, favourite and rate a recipe if they have an account.
+
+### User Stories
+[Back to top](#contents)
+### Design Prototype (Wireframes)
+For the project, I used [Adobe XD](https://helpx.adobe.com/uk/support/xd.html) to create the wireframes. Wireframes help give me an idea of what I want to see the site layout. before I start writing code and to help me think about database structure. One of the main reasons I used XD was because it is a free site. I did not fancy paying for [Balsamiq](https://balsamiq.com/wireframes/) the wireframe site I used last time. I used the 30 day trial in my previous project.
+Some of the layout has changed since creating the wireframes eg: new page for sign up and log in.
+![Homepage](assets/readme-images/wireframe1.png)
+![Create a Recipe](assets/readme-images/wireframe2.png)
+![Edit a recipe](assets/readme-images/wireframe3.png)
+![Single Recipe](assets/readme-images/wireframe4.png)
+![Rating and Delete recipe modal](assets/readme-images/wireframe5.png)
+
+[Back to top](#contents)
