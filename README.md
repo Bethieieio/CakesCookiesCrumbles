@@ -18,6 +18,9 @@ INSERT AM I RESPONSIVE HERE
 -[**Permissions**](#permissions)   
     -[Logged Out User](#logged-out-user)
     -[Logged In User](#logged-in-user)
+-[**Features**](#features)
+    -[Current Features](#current-features)
+    -[Future Features](future-features)
 
 
 
@@ -99,3 +102,23 @@ A logged in user can view all of the content a logged out user can see but also 
 - Edit their recipe
 - Delete their recipe
 - Rate recipes
+
+## Features
+### Current Features
+log in
+sign up
+nav
+homepage recipe headers
+single recipe
+fave
+rating
+average rating
+edit recipe
+delete recipe
+#### Future Features
+If I get the chance again, I would like to add the following features to Cakes, Cookies and Crumbles.
+- The ablity to comment on other peoples recipes. (Logged in User).
+- To be able to view all of another users recipes on the same page.
+- To filter recipes on the homepage by number of favourites and rating.
+- To have more images on one recipe.
+- To have different categories such as vegan, gluten free, nut free etc and to have these as filters too.
