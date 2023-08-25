@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-08-05T20:19:23.078Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="Bo8JtkrpCAKtqq99sI1S" version="20.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-25T12:42:45.009Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="t417S0u0DYpAMZhtlK5U" version="20.4.0" type="github">
   <diagram id="QMOpnbqXZ2mUJzAaucJ2" name="Page-1">
     <mxGraphModel dx="1018" dy="688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,7 +90,7 @@
             <mxPoint x="560.5" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WwM0dgEL5zbI4ygbFiYx-27" value="Enter email and password" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
+        <mxCell id="WwM0dgEL5zbI4ygbFiYx-27" value="Enter username and password" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
           <mxGeometry x="500" y="200" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WwM0dgEL5zbI4ygbFiYx-28" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
@@ -99,7 +99,7 @@
             <mxPoint x="560.5" y="290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="WwM0dgEL5zbI4ygbFiYx-29" value="Is the email and password valid?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="WwM0dgEL5zbI4ygbFiYx-29" value="Is the username and password valid?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFCC;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="495" y="290" width="130" height="80" as="geometry" />
         </mxCell>
         <mxCell id="WwM0dgEL5zbI4ygbFiYx-33" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="WwM0dgEL5zbI4ygbFiYx-21" edge="1">
@@ -154,7 +154,7 @@
         <mxCell id="WwM0dgEL5zbI4ygbFiYx-44" value="Create a recipe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
           <mxGeometry x="350" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WwM0dgEL5zbI4ygbFiYx-45" value="Write a Rating" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
+        <mxCell id="WwM0dgEL5zbI4ygbFiYx-45" value="Make a Rating" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
           <mxGeometry x="660" y="490" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="WwM0dgEL5zbI4ygbFiYx-49" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
@@ -165,6 +165,33 @@
         </mxCell>
         <mxCell id="WwM0dgEL5zbI4ygbFiYx-50" value="Favourite a recipe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" parent="1" vertex="1">
           <mxGeometry x="510" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="519.5" as="sourcePoint" />
+            <mxPoint x="310" y="519.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="550" as="sourcePoint" />
+            <mxPoint x="414" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-4" value="Edit your recipe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" vertex="1" parent="1">
+          <mxGeometry x="190" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-5" value="Delete your recipe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" vertex="1" parent="1">
+          <mxGeometry x="354" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="550" as="sourcePoint" />
+            <mxPoint x="569.5" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oI84TkCdfc1JNpRO27uY-9" value="Unfavourite a recipe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFCCFC;" vertex="1" parent="1">
+          <mxGeometry x="510" y="585" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
