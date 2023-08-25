@@ -11,7 +11,10 @@ INSERT AM I RESPONSIVE HERE
 ## Contents
 - [**Objective**](#objective)
 - [**User Experience**](#user-experience)
-    - [**Project Goals**](#project-goals)
+    - [Project Goals](#project-goals)
+    - [Components](#components)
+    - [Design Choices](#design-choices)
+    
 
 
 ## Objective
@@ -52,3 +55,12 @@ Some of the layout has changed since creating the wireframes eg: new page for si
 ReactJS makes it easy to reuse components throughout the application.
 This is a flowchart to see the parent/child relationships of each component.
 ![Component Flowchart](assets/readme-images/component-flochart.png)
+
+### Design Choices
+#### Colour Scheme
+I chose four colours with the help of [Coolors](https://coolors.co/ffffcc-ffade5-ffffff-425061).
+The pink and yellow colours are bright and happy colours that I associate with cakes and baking. They both show up on eachother making the words standout and easy for the user to read. I also chose white and a grey to help break up the yellow and pink at times also making the website look professional.
+![Yellow on Pink](assets/readme-images/yellow-on-pink.png)
+![Pink on Yellow](assets/readme-images/pink-on-yellow.png)
+![Colour Scheme](assets/readme-images/coolors.png)
+#### Typeography
