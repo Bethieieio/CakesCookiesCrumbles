@@ -14,7 +14,12 @@ INSERT AM I RESPONSIVE HERE
     - [Project Goals](#project-goals)
     - [Components](#components)
     - [Design Choices](#design-choices)
-    
+    - [Project Management](#project-management)
+-[**Permissions**](#permissions)   
+    -[Logged Out User](#logged-out-user)
+    -[Logged In User](#logged-in-user)
+
+
 
 
 ## Objective
@@ -64,8 +69,33 @@ The pink and yellow colours are bright and happy colours that I associate with c
 ![Pink on Yellow](assets/readme-images/pink-on-yellow.png)
 ![Colour Scheme](assets/readme-images/coolors.png)
 #### Typeography
-I have two fonts for the site. One for titles and one for content.
+I have two fonts for the site. One for titles and one for content.<br>
 I chose Josefin Slab as its thin, delicate but still easy to read. It gives a nice contrast to the title font.
 ![Josefin Slab THIN 100](assets/readme-images/font1.png)<br>
 I chose Asap for the title for its round and bold apparence. It is easy to read and stands out without overpowering the smaller font.
 ![Asap BOLD 700](assets/readme-images/font2.png)<br>
+
+### Project Management
+I use Github Projects to create a kanban board to help plan and organise my project.
+talk about the use of labels and stuff idk
+
+[Back to top](#contents)
+
+## Permissions
+### Logged Out User
+If the user does not have an account or they are logged out, they can see the following:
+- View the homepage and all the recipe headers, account holders have created.
+- See the average rating each recipe has on the homepage.
+- Go into a single recipe and view all the instructions.
+- Sign up page.
+- Log in Page.
+
+### Logged In User
+A logged in user can view all of the content a logged out user can see but also can see / do the following.
+- Favourite recipes
+- Use of the favourites filter
+- Create their own recipes
+- Use of the 'Your Recipes' filter
+- Edit their recipe
+- Delete their recipe
+- Rate recipes
