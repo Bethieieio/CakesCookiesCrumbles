@@ -59,8 +59,13 @@ This is a flowchart to see the parent/child relationships of each component.
 ### Design Choices
 #### Colour Scheme
 I chose four colours with the help of [Coolors](https://coolors.co/ffffcc-ffade5-ffffff-425061).
-The pink and yellow colours are bright and happy colours that I associate with cakes and baking. They both show up on eachother making the words standout and easy for the user to read. I also chose white and a grey to help break up the yellow and pink at times also making the website look professional.<br>
+The pink and yellow colours are bright and happy colours that I associate with cakes and baking. They both show up on eachother making the words standout and easy for the user to read. I also chose white and a grey to help break up the yellow and pink at times also making the website look professional.<br> 
 ![Yellow on Pink](assets/readme-images/yellow-on-pink.png)
 ![Pink on Yellow](assets/readme-images/pink-on-yellow.png)
 ![Colour Scheme](assets/readme-images/coolors.png)
 #### Typeography
+I have two fonts for the site. One for titles and one for content.
+I chose Josefin Slab as its thin, delicate but still easy to read. It gives a nice contrast to the title font.
+![Josefin Slab THIN 100](assets/readme-images/font1.png)<br>
+I chose Asap for the title for its round and bold apparence. It is easy to read and stands out without overpowering the smaller font.
+![Asap BOLD 700](assets/readme-images/font2.png)<br>
