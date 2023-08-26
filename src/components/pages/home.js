@@ -1,35 +1,50 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Recipe } from "../recipe"
-import { Button, Col, Container, Row } from "react-bootstrap"
+import { Button, Col, Container, Form, FormLabel, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/fontawesome-free-solid"
+import qs from 'qs'
 
 export const Home = () => {
     const [page, setPage] = useState(1)
     const [showMoreButton, setShowMoreButton] = useState(true)
     const [recipes, setRecipes] = useState([])
     const [loading, setLoading] = useState(true)
+    const [filters, setFilters] = useState({categories : []})
 
-    const getPage = async() => {
+    const getPage = async (reset = false) => {              
+        if (reset) setRecipes([])
         try {   
             setLoading(true)
-            const result = await axios.get(`recipes?page=${page}`)
-            console.log(result)
+            const result = await axios.get(`recipes?page=${page}`, {
+                params : {
+                    categories : filters.categories,
+                },
+                paramsSerializer: params => {
+                    return qs.stringify(params, {
+                        arrayFormat: 'repeat',
+                    })
+                },
+            })
 
-            if (result.data.results.length != (10)) setShowMoreButton(false)
+            if (result.data.results.length != 10) setShowMoreButton(false)
+            else if (!showMoreButton) setShowMoreButton(true)
 
-            setRecipes([
-                ...recipes,
-                ...result.data.results,
-            ])
+            console.log('results', result.data.results, recipes)
+
+            if (reset) setRecipes(result.data.results)
+            else setRecipes([
+                    ...recipes,
+                    ...result.data.results,
+                ])
         }catch(error){
 
         }
         setLoading(false)
     }
     useEffect(() => {
-        getPage()
+        if (recipes.length === 0) getPage()
     }, [])
     useEffect(() => {
         getPage()
@@ -39,6 +54,34 @@ export const Home = () => {
     return (
         <>
         <Container>
+            <Row>
+                <Col>
+                    {['Cakes','Cookies', 'Crumbles'].map(category=>
+                    <FormLabel key={category}>
+                        <Form.Check type='checkbox' value={category} onChange={(event) => {
+                            if(filters.categories.includes(event.target.value)){
+                                setFilters({
+                                    categories : filters.categories.filter(cat=>cat!==event.target.value)
+                                })
+                            }else{
+                                setFilters({
+                                    categories : [
+                                        ...filters.categories,
+                                        event.target.value,
+                                    ]
+                                })
+                            }
+                        }}/>{category}
+                    </FormLabel>)}
+                </Col>
+                <Col>
+                        <Button onClick={async () => {
+                            await getPage(true)
+                        }}> 
+                            Update
+                        </Button>
+                </Col>
+            </Row>
             <Row>
                 {recipes.map(recipe => <Recipe key={`${recipe.id}-${recipe.title}`} recipe={recipe}/>)}
             </Row>

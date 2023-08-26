@@ -122,3 +122,20 @@ If I get the chance again, I would like to add the following features to Cakes, 
 - To filter recipes on the homepage by number of favourites and rating.
 - To have more images on one recipe.
 - To have different categories such as vegan, gluten free, nut free etc and to have these as filters too.
+
+## Technologies Used
+### Languages 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) the massive bulk of the frontend of this website is written in Javascript. It is a single page React Application.
+[HTML5](https://html.com/html5/) to layout and structure the websites content.
+- [CSS][https://www.w3schools.com/css/] to help present the website to be cute and pretty yay
+### Libraries and Frameworks
+- [React](https://react.dev/) Javascript library for creating single page applications 
+- [Bootstrap](https://getbootstrap.com/) a CSS framework to use for quicker and easier way to make sites responive for any size screened device.
+- [Font Awesome](https://fontawesome.com/) icons toolkit I used for the favourite hearts, rating stars and edit pencils.
+- [Google Fonts](https://fonts.google.com/) I got the font famillies I used from Google Fonts, a massive open source font library.
+### Packages and Dependences 
+- [Axios](https://axios-http.com/) HTTP client for making network requests.
+- [React Bootstrap](https://react-bootstrap.github.io/) React components for using Bootstrap with React.
+- [React Dom](https://legacy.reactjs.org/docs/react-dom.html) a react librbary for running react in the webpage
+-  React Router Dom enables routing and in app navigation.
+### Other Tools
