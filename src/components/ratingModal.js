@@ -72,14 +72,14 @@ export const RatingModal = (props) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={() => onClose(false)}>Close</Button>
+                <Button variant="secondary" onClick={() => onClose(false)} aria-label='Close Rating Modal'>Close</Button>
                 <Button variant="primary" onClick={() => {
                     if (selection === 0) {
                         setError('Please make a rating')
                         return
                     }
                     sendRating()
-                }}>Submit</Button>
+                }}aria-label='Submit Rating' >Submit</Button>
             </Modal.Footer>
         </Modal>
     )

@@ -89,7 +89,7 @@ export const EditRecipe = () => {
                         <h5> {recipe.title} </h5>
                         <button onClick={() => {
                             setOpenModal(true)
-                        }}>Delete Recipe</button>
+                        }} aria-label='Delete recipe'>Delete Recipe</button>
                     </>: 'recipe'}</Card.Header>
                     <Card.Body>
                         {loading ? (<>Loading...</>) : recipe.title ? (
@@ -176,7 +176,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
                             
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" aria-label='Save changed recipe'>
                                 Save!
                             </Button>
                             {errors?.non_field_errors?.map((message, idx) => 
@@ -197,10 +197,10 @@ export const EditRecipe = () => {
                 <Modal.Footer>
                     <Button onClick={() => {
                         deleteRecipe()
-                    }}>Yes</Button>
+                    }} aria-label='Yes, delete recipe'>Yes</Button>
                     <Button onClick={() => {
                         setOpenModal(false)
-                    }}>No</Button>
+                    }}aria-label='No, do not delete recipe'>No</Button>
                 </Modal.Footer>
             </Modal>
     </Container>

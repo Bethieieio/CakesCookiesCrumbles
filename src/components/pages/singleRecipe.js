@@ -41,7 +41,7 @@ export const SingleRecipe = () => {
                         {recipe ?   
                         <Container>
                             <Row>
-                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon icon={faStarO} onClick={() => {
+                                <Col className="d-flex justify-content-center"> <FontAwesomeIcon aria-label='Rate Recipe' icon={faStarO} onClick={() => {
                                     if (currentUser) setRatingModalOpen(true)
                                     else navigate('/login/')
                                 }}/></Col>
@@ -50,7 +50,7 @@ export const SingleRecipe = () => {
                             </Row>
                             <Row>
                                 <Col className="d-flex justify-content-center">
-                                {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
+                                {recipe.is_owner && <FontAwesomeIcon aria-label='Edit Recipe' icon={faPencil} onClick={() => {
                                 navigate(`/editrecipe/${recipe.id}`)
                                 }} />}
                                 </Col>

@@ -29,10 +29,10 @@ export const FavouriteToggle = (props) => {
     return !currentUser?(
         <FontAwesomeIcon icon={faHeartO} onClick={() => {
             navigate('/login')
-        }}/>
+        }} aria-label='Add recipe to favourites'/>
     ):favourited?(
-        <FontAwesomeIcon beatFade={loading} icon={faHeart} onClick={removeFavourite}/>
+        <FontAwesomeIcon beatFade={loading} icon={faHeart} onClick={removeFavourite} aria-label='Remove from favourite'/>
     ):(
-        <FontAwesomeIcon beatFade={loading} icon={faHeartO} onClick={addFavourite}/>
+        <FontAwesomeIcon beatFade={loading} icon={faHeartO} onClick={addFavourite} aria-label='Add recipe to favourites'/>
     )
 }
