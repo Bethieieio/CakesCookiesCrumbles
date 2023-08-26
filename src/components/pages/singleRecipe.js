@@ -11,6 +11,7 @@ import { faStar as faStarO } from '@fortawesome/free-regular-svg-icons';
 import { FavouriteToggle } from '../favouriteToggle';
 import { RatingModal } from '../ratingModal';
 import { useCurrentUser } from '../context/CurrentUserContext';
+import { faPencil } from '@fortawesome/free-solid-svg-icons';
 
 
 export const SingleRecipe = () => {
@@ -46,6 +47,13 @@ export const SingleRecipe = () => {
                                 }}/></Col>
                                 <Col className="d-flex justify-content-center"> <h3>{recipe.title}</h3> </Col>
                                 <Col className="d-flex justify-content-center"><FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} /></Col>
+                            </Row>
+                            <Row>
+                                <Col className="d-flex justify-content-center">
+                                {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
+                                navigate(`/editrecipe/${recipe.id}`)
+                                }} />}
+                                </Col>
                             </Row>
                         </Container> : 'Not Found'}
                     </Card.Header>

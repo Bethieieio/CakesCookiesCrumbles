@@ -122,15 +122,18 @@ export const EditRecipe = () => {
                                     <Form.Label>
                                         Categories
                                     </Form.Label>
-                                    <Form.Select multiple onChange={(event) => {
-                                    setRecipe({
-                                        ...recipe,
-                                        categories: [...event.target.options].filter(option => option.selected).map(option => ({ name: option.value })),
-                                    })
-                                }}>
-                                        <option selected={recipe.categories.map(cat => cat.name).includes('Cakes')} value='Cakes'>Cakes</option>
-                                        <option selected={recipe.categories.map(cat => cat.name).includes('Cookies')} value='Cookies'>Cookies</option>
-                                        <option selected={recipe.categories.map(cat => cat.name).includes('Crumbles')} value='Crumbles'>Crumbles</option>
+                                    <Form.Select multiple
+                                    selected={recipe.categories.map(cat => cat.name)}
+                                    defaultValue={recipe.categories.map(cat => cat.name)}
+                                    onChange={(event) => {
+                                        setRecipe({
+                                            ...recipe,
+                                            categories: [...event.target.options].filter(option => option.selected).map(option => ({ name: option.value })),
+                                        })
+                                    }}>
+                                        <option value='Cakes'>Cakes</option>
+                                        <option value='Cookies'>Cookies</option>
+                                        <option value='Crumbles'>Crumbles</option>
                                     </Form.Select>
                                 </Form.Group>
                                 {errors?.categories?.map((message, idx) => 

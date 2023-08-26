@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Badge, Card, Col, Container, Image, Row, Stack } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import { FavouriteToggle } from "./favouriteToggle"
+import { faPencil } from "@fortawesome/free-solid-svg-icons"
 
 export const Recipe = (props) => {
     const {recipe} = props
@@ -19,6 +20,9 @@ export const Recipe = (props) => {
                         </Col>
                         <Col xs={3}>
                             <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
+                            {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
+                                navigate(`/editrecipe/${recipe.id}`)
+                            }} />}
                         </Col>
                     </Row>
                 </Container>
