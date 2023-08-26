@@ -74,13 +74,15 @@ export const Home = () => {
                         }}/>{category}
                     </FormLabel>)}
                 </Col>
-                <Col>
-                        <Button onClick={async () => {
-                            await getPage(true)
-                        }}> 
-                            Update
-                        </Button>
-                </Col>
+                <Row>
+                    <Col>
+                            <Button onClick={async () => {
+                                await getPage(true)
+                            }}> 
+                                Update
+                            </Button>
+                    </Col>
+                </Row>
             </Row>
             <Row>
                 {recipes.map(recipe => <Recipe key={`${recipe.id}-${recipe.title}`} recipe={recipe}/>)}

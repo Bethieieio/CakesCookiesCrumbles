@@ -61,7 +61,7 @@ export const SingleRecipe = () => {
                         {recipe ? (<>
                         <Container>
                             <Row>
-                                <Col><img className='recipe-image' src={recipe.image}/></Col>
+                                <Col><img className='recipe-image' src={recipe.image} alt={`image of ${recipe.title}`}/></Col>
                                 <Col>
                                     <h5>Ingredients</h5>
                                     {recipe.ingredients.split('\n').map((line)=> <p key={line}>{line}</p>)}

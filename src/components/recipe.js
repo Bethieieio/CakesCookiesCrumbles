@@ -16,7 +16,7 @@ export const Recipe = (props) => {
                         <Col xs={9}>
                             <Image onClick={() => {
                                 navigate(`/recipe/${recipe.id}`)
-                            }}fluid src={recipe.image}/>
+                            }}fluid src={recipe.image} alt={`image of ${recipe.title}`}/>
                         </Col>
                         <Col xs={3}>
                             <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
