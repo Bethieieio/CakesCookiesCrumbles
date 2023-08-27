@@ -1,4 +1,4 @@
-import { faHeart } from "@fortawesome/fontawesome-free-solid"
+import { faHeart, faStar } from "@fortawesome/fontawesome-free-solid"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Badge, Card, Col, Container, Image, Row, Stack } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
@@ -19,10 +19,18 @@ export const Recipe = (props) => {
                             }}fluid src={recipe.image} alt={`image of ${recipe.title}`}/>
                         </Col>
                         <Col xs={3}>
-                            <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
-                            {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
+                            <div>
+                                <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faStar}/>
+                                {recipe.average_rating}
+                            </div>
+                            <div>
+                                {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
                                 navigate(`/editrecipe/${recipe.id}`)
-                            }} />}
+                                }} />}
+                            </div>
                         </Col>
                     </Row>
                 </Container>
