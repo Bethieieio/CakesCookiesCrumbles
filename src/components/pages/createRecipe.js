@@ -51,12 +51,12 @@ export const CreateRecipe = () => {
         <Container fluid>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
-                    <Card>
-                    <Card.Header as="h5">Create a Recipe</Card.Header>
+                    <Card className='card-css'>
+                    <Card.Header className='headings d-flex justify-content-center' as="h5">Create a Recipe</Card.Header>
                     <Card.Body>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="title">
-                            <Form.Label>Title</Form.Label>
+                            <Form.Label className='subheading-title'>Title</Form.Label>
                             <Form.Control type="text" placeholder="Title" value={recipe.title} onChange={(event) => {
                                 setRecipe({
                                     ...recipe,
@@ -68,7 +68,7 @@ export const CreateRecipe = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className="mb-3" controlId="description">
-                            <Form.Label>Description</Form.Label>
+                            <Form.Label className='subheading-title'>Description</Form.Label>
                             <Form.Control as="textarea" placeholder="Description" value={recipe.description} onChange={(event) => {
                                 setRecipe({
                                     ...recipe,
@@ -80,7 +80,7 @@ export const CreateRecipe = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className='mb-3' controlId='categories'>
-                                    <Form.Label>
+                                    <Form.Label className='subheading-title'>
                                         Categories
                                     </Form.Label>
                                     <Form.Select multiple onChange={(event) => {
@@ -98,7 +98,7 @@ export const CreateRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className="mb-3" controlId="ingredients">
-                            <Form.Label>Ingredients</Form.Label>
+                            <Form.Label className='subheading-title'>Ingredients</Form.Label>
                             <Form.Control as="textarea" placeholder="Ingredients" value={recipe.ingredients} onChange={(event) => {
                                 setRecipe({
                                     ...recipe,
@@ -110,7 +110,7 @@ export const CreateRecipe = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className="mb-3" controlId="instructions">
-                            <Form.Label>Instructions</Form.Label>
+                            <Form.Label className='subheading-title'>Instructions</Form.Label>
                             <Form.Control as="textarea" placeholder="Instructions" value={recipe.instructions} onChange={(event) => {
                                 setRecipe({
                                     ...recipe,
@@ -122,7 +122,7 @@ export const CreateRecipe = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
 <Form.Group className="mb-3" controlId="image">
-                            <Form.Label>Image</Form.Label>
+                            <Form.Label className='subheading-title'>Image</Form.Label>
                             <Form.Control type="file" placeholder="Image" onChange={(event) => {
                                 setRecipe({
                                     ...recipe,

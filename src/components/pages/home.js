@@ -54,11 +54,11 @@ export const Home = () => {
     return (
         <>
         <Container>
-            <Row>
-                <Col>
+            <Row className="filter-bar">
+                <Col className="d-flex justify-content-center">
                     {['Cakes','Cookies', 'Crumbles'].map(category=>
-                    <FormLabel key={category}>
-                        <Form.Check type='checkbox' value={category} onChange={(event) => {
+                    <FormLabel key={category} className="filter-checkbox-label">
+                        <Form.Check className="filter-checkbox" type='checkbox' value={category} onChange={(event) => {
                             if(filters.categories.includes(event.target.value)){
                                 setFilters({
                                     categories : filters.categories.filter(cat=>cat!==event.target.value)
@@ -75,7 +75,7 @@ export const Home = () => {
                     </FormLabel>)}
                 </Col>
                 <Row>
-                    <Col>
+                    <Col className="d-flex justify-content-center">
                             <Button onClick={async () => {
                                 await getPage(true)
                             }}> 

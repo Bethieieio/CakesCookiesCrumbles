@@ -20,9 +20,9 @@ export const Navbar = () => {
     }
 
     return(
-    <BootstrapNavbar expand="lg" className="bg-body-tertiary">
+    <BootstrapNavbar expand="lg">
         <Container>
-            <BootstrapNavbar.Brand onClick={() => {navigate('/')}}>Cakes, Cookies and Crumbles</BootstrapNavbar.Brand>
+            <BootstrapNavbar.Brand onClick={() => {navigate('/')}} className="main-title">Cakes, Cookies and Crumbles</BootstrapNavbar.Brand>
             <BootstrapNavbar.Toggle aria-controls="basic-navbar-nav" />
             <BootstrapNavbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
 

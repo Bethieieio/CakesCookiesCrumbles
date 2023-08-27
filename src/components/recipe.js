@@ -10,7 +10,7 @@ export const Recipe = (props) => {
     const navigate = useNavigate()
     return(
         <Col md={4}>
-            <Card>
+            <Card className="recipe-box">
                 <Container>
                     <Row>
                         <Col xs={9}>
@@ -22,11 +22,11 @@ export const Recipe = (props) => {
                             <div>
                                 <FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} />
                             </div>
-                            <div>
+                            <div className="star">
                                 <FontAwesomeIcon icon={faStar}/>
-                                {recipe.average_rating}
+                                {recipe.average_rating || '-'}
                             </div>
-                            <div>
+                            <div className="pencil">
                                 {recipe.is_owner && <FontAwesomeIcon icon={faPencil} onClick={() => {
                                 navigate(`/editrecipe/${recipe.id}`)
                                 }} />}

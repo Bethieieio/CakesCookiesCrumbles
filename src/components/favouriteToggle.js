@@ -27,12 +27,12 @@ export const FavouriteToggle = (props) => {
         if (result.data) setFavourited(result.data.id)
     }
     return !currentUser?(
-        <FontAwesomeIcon icon={faHeartO} onClick={() => {
+        <FontAwesomeIcon className="heart" icon={faHeartO} onClick={() => {
             navigate('/login')
         }} aria-label='Add recipe to favourites'/>
     ):favourited?(
-        <FontAwesomeIcon beatFade={loading} icon={faHeart} onClick={removeFavourite} aria-label='Remove from favourite'/>
+        <FontAwesomeIcon className="heart" beatFade={loading} icon={faHeart} onClick={removeFavourite} aria-label='Remove from favourite'/>
     ):(
-        <FontAwesomeIcon beatFade={loading} icon={faHeartO} onClick={addFavourite} aria-label='Add recipe to favourites'/>
+        <FontAwesomeIcon className="heart" beatFade={loading} icon={faHeartO} onClick={addFavourite} aria-label='Add recipe to favourites'/>
     )
 }

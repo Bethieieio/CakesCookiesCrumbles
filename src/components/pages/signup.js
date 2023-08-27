@@ -40,8 +40,8 @@ export const Signup = () => {
         <Container fluid>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
-                    <Card>
-                    <Card.Header as="h5">Sign Up</Card.Header>
+                    <Card className='card-css'>
+                    <Card.Header className='headings d-flex justify-content-center' as="h5">Sign Up</Card.Header>
                     <Card.Body>
                     <Form onSubmit={handleSubmit}>
 
@@ -56,7 +56,7 @@ export const Signup = () => {
 
 
                         <Form.Group className="mb-3" controlId="username">
-                            <Form.Label>Username</Form.Label>
+                            <Form.Label className='subheading-title'>Username</Form.Label>
                             <Form.Control type="text" placeholder="Username" value={username} onChange={(event) => {
                                 setUsername(event.target.value)
                             }}/>
@@ -65,7 +65,7 @@ export const Signup = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
                         <Form.Group className="mb-3" controlId="formBasicPassword1">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label className='subheading-title'>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" value={password1} onChange={(event) => {
                                 setPassword1(event.target.value)
                             }}/>
@@ -74,7 +74,7 @@ export const Signup = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
                         <Form.Group className="mb-3" controlId="formBasicPassword2">
-                            <Form.Label>Confirm Password</Form.Label>
+                            <Form.Label className='subheading-title'>Confirm Password</Form.Label>
                             <Form.Control type="password" placeholder="Confirm Password" value={password2} onChange={(event) => {
                                 setPassword2(event.target.value)
                             }}/>

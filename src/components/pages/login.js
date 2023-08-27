@@ -35,12 +35,12 @@ export const Login = () => {
         <Container fluid>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
-                    <Card>
-                    <Card.Header as="h5">Log In</Card.Header>
+                    <Card className='card-css'>
+                    <Card.Header className='headings d-flex justify-content-center' as="h5">Log In</Card.Header>
                     <Card.Body>
                     <Form onSubmit={handleSubmit}>
                         <Form.Group className="mb-3" controlId="username">
-                            <Form.Label>Username</Form.Label>
+                            <Form.Label className='subheading-title'>Username</Form.Label>
                             <Form.Control type="text" placeholder="Username" value={username} onChange={(event) => {
                                 setUsername(event.target.value)
                             }}/>
@@ -49,7 +49,7 @@ export const Login = () => {
                         <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
+                            <Form.Label className='subheading-title'>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" value={password} onChange={(event) => {
                                 setPassword(event.target.value)
                             }}/>

@@ -84,7 +84,7 @@ export const EditRecipe = () => {
         <Container fluid>
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
-                    <Card>
+                    <Card className='card-css'>
                     <Card.Header>Edit {recipe.title ? <>
                         <h5> {recipe.title} </h5>
                         <button onClick={() => {
