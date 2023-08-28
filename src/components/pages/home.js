@@ -11,16 +11,18 @@ export const Home = () => {
     const [showMoreButton, setShowMoreButton] = useState(true)
     const [recipes, setRecipes] = useState([])
     const [loading, setLoading] = useState(true)
-    const [filters, setFilters] = useState({categories : [], isIwner: false })
+    const [filters, setFilters] = useState({categories : [], isOwner: false, isFavourited: false })
 
     const getPage = async (reset = false) => {              
         if (reset) setRecipes([])
         try {   
             setLoading(true)
-            const result = await axios.get(`recipes?page=${page}`, {
+            const result = await axios.get(`recipes`, {
                 params : {
                     categories : filters.categories,
                     isOwner: filters.isOwner,
+                    isFavourited: filters.isFavourited,
+                    page,
                 },
                 paramsSerializer: params => {
                     return qs.stringify(params, {
@@ -79,6 +81,14 @@ export const Home = () => {
                                 isOwner: !filters.isOwner,
                             })
                         }}/> Your Recipes
+                    </FormLabel>
+                    <FormLabel className="filter-checkbox-label">
+                        <Form.Check className="filter-checkbox" type='checkbox' value={true} onChange={() => {
+                            setFilters({
+                                ...filters,
+                                isFavourited: !filters.isFavourited,
+                            })
+                        }}/> Your Favourites
                     </FormLabel>
                 </Col>
                 <Row>
