@@ -34,18 +34,18 @@ export const SingleRecipe = () => {
             <Row>
                 <Col md={{ span: 10, offset: 1 }}>
                     
-                    <Card>
-                    <Card.Header>
+                    <Card className='card'>
+                    <Card.Header className='recipe-header-card'>
                         
                         
                         {recipe ?   
                         <Container>
-                            <Row>
+                            <Row className='px-5'>
                                 <Col className="d-flex justify-content-center"> <FontAwesomeIcon className="single-recipe-star" aria-label='Rate Recipe' icon={faStarO} onClick={() => {
                                     if (currentUser) setRatingModalOpen(true)
                                     else navigate('/login/')
                                 }}/></Col>
-                                <Col className="d-flex justify-content-center"> <h3>{recipe.title}</h3> </Col>
+                                <Col md={{ span: 3 }} className="d-flex justify-content-center headings"> <h3>{recipe.title}</h3> </Col>
                                 <Col className="d-flex justify-content-center"><FavouriteToggle id={recipe.id} favouriteId={recipe.favourites[0]?.id} /></Col>
                             </Row>
                             <Row>

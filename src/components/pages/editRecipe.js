@@ -85,9 +85,9 @@ export const EditRecipe = () => {
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                     <Card className='card-css'>
-                    <Card.Header>Edit {recipe.title ? <>
-                        <h5> {recipe.title} </h5>
-                        <button onClick={() => {
+                    <Card.Header className='headings d-flex justify-content-around'>{recipe.title ? <>
+                        <h5> Edit {recipe.title} </h5>
+                        <button className='btn btn-primary delete-btn' onClick={() => {
                             setOpenModal(true)
                         }} aria-label='Delete recipe'>Delete Recipe</button>
                     </>: 'recipe'}</Card.Header>
@@ -107,7 +107,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
     <Form.Group className="mb-3" controlId="description">
-                                <Form.Label>Description</Form.Label>
+                                <Form.Label className='subheading-title' >Description</Form.Label>
                                 <Form.Control as="textarea" placeholder="Description" value={recipe.description} onChange={(event) => {
                                     setRecipe({
                                         ...recipe,
@@ -119,7 +119,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
 
                                 <Form.Group className='mb-3' controlId='categories'>
-                                    <Form.Label>
+                                    <Form.Label className='subheading-title'>
                                         Categories
                                     </Form.Label>
                                     <Form.Select multiple
@@ -140,7 +140,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
     <Form.Group className="mb-3" controlId="ingredients">
-                                <Form.Label>Ingredients</Form.Label>
+                                <Form.Label className='subheading-title'>Ingredients</Form.Label>
                                 <Form.Control as="textarea" placeholder="Ingredients" value={recipe.ingredients} onChange={(event) => {
                                     setRecipe({
                                         ...recipe,
@@ -152,7 +152,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
     <Form.Group className="mb-3" controlId="instructions">
-                                <Form.Label>Instructions</Form.Label>
+                                <Form.Label className='subheading-title'>Instructions</Form.Label>
                                 <Form.Control as="textarea" placeholder="Instructions" value={recipe.instructions} onChange={(event) => {
                                     setRecipe({
                                         ...recipe,
@@ -164,7 +164,7 @@ export const EditRecipe = () => {
                             <Alert variant="warning" className="mt-3" key={idx}>{message}</Alert>)}
     
     <Form.Group className="mb-3" controlId="image">
-                                <Form.Label>Image</Form.Label>
+                                <Form.Label className='subheading-title'>Image</Form.Label>
                                 <Form.Control type="file" placeholder="Image" onChange={(event) => {
                                     setRecipe({
                                         ...recipe,

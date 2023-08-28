@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Josefin+Slab:wght@400&display=swap');
 
+/* buttons */
 .btn-primary {
     --bs-btn-bg: #FFADE5 !important;
     --bs-btn-hover-bg: #FFFFFF !important;
@@ -11,6 +12,12 @@
     --bs-btn-border-radius: 2em !important;
     padding: 0.25em 1em 0.25em 1em!important;
 }
+
+.delete-btn {
+    margin-bottom: 5px;
+    padding-bottom: 7px;
+}
+
 
 body {
     background-color: #FFFFCC !important;
@@ -95,7 +102,6 @@ img {
     font-size: 2.3em;
     color: #FFADE5;
     cursor: pointer;
-    background-color: #FFFFCC;
     padding: 5px;
     transition: all .4s ease !important;
     margin-bottom: 20px;
@@ -103,8 +109,7 @@ img {
 }
 
 .heart:hover {
-    color: #FFFFCC;
-    background-color: #FFADE5;
+    color: #425061;
 }
 
 .pencil {
@@ -140,9 +145,9 @@ img {
 }
 
 .single-recipe-star:hover {
-    color: #FFADE5;
-    background-color: #FFFFCC;
+    color: #425061;
     transition: all .5s ease !important;
+    cursor: pointer;
 }
 
 .star svg {
@@ -154,8 +159,9 @@ img {
 
 .headings {
     font-family: Asap !important;
-    font-size: 1.25em;
+    font-size: 1.50em;
     color: #425061 !important;
+    margin-top: 8px;
 
 }
 
@@ -166,7 +172,7 @@ img {
     color: #425061;
 }
 
-input {
+input, textarea, select {
     font-family: Josefin Slab !important;
 }
 
@@ -174,3 +180,26 @@ input {
     margin-top: 50px !important;
     border: 2px solid #FFADE5 !important;
 }
+
+/* recipes */
+.headings {
+    font-family: Asap, sans-serif !important;
+    margin-top: 20px  !important;
+}
+
+.recipe-header-card {
+    background-color: #FFADE5 !important;
+}
+
+.card {
+    margin-top: 50px;
+}
+
+.card-header .heart {
+    color:#FFFFCC;
+}
+
+.card-header .heart:hover {
+    color:#ffffff;
+}
+
