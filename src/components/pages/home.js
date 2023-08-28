@@ -5,6 +5,7 @@ import { Button, Col, Container, Form, FormLabel, Row } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faSpinner } from "@fortawesome/fontawesome-free-solid"
 import qs from 'qs'
+import { useCurrentUser } from "../context/CurrentUserContext"
 
 export const Home = () => {
     const [page, setPage] = useState(1)
@@ -12,6 +13,7 @@ export const Home = () => {
     const [recipes, setRecipes] = useState([])
     const [loading, setLoading] = useState(true)
     const [filters, setFilters] = useState({categories : [], isOwner: false, isFavourited: false })
+    const currentUser = useCurrentUser()
 
     const getPage = async (reset = false) => {              
         if (reset) setRecipes([])
@@ -74,7 +76,10 @@ export const Home = () => {
                             }
                         }}/>{category}
                     </FormLabel>)}
-                    <FormLabel className="filter-checkbox-label">
+                    {
+                        currentUser && (
+                            <>
+                                <FormLabel className="filter-checkbox-label">
                         <Form.Check className="filter-checkbox" type='checkbox' value={true} onChange={() => {
                             setFilters({
                                 ...filters,
@@ -90,6 +95,8 @@ export const Home = () => {
                             })
                         }}/> Your Favourites
                     </FormLabel>
+                            </>
+                        )}
                 </Col>
                 <Row>
                     <Col className="d-flex justify-content-center">
