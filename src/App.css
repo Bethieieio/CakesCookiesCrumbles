@@ -206,3 +206,11 @@ input, textarea, select {
 .badge.bg-primary {
     --bs-primary-rgb: 255, 173, 229;
 }
+
+.asap {
+    font-family: Asap !important;
+}
+
+.josefin {
+    font-family: Josefin Slab;
+}
