@@ -31,8 +31,6 @@ export const Home = () => {
             if (result.data.results.length != 10) setShowMoreButton(false)
             else if (!showMoreButton) setShowMoreButton(true)
 
-            console.log('results', result.data.results, recipes)
-
             if (reset) setRecipes(result.data.results)
             else setRecipes([
                     ...recipes,
@@ -77,6 +75,7 @@ export const Home = () => {
                 <Row>
                     <Col className="d-flex justify-content-center">
                             <Button onClick={async () => {
+                                setPage(1)
                                 await getPage(true)
                             }}> 
                                 Update
@@ -88,6 +87,9 @@ export const Home = () => {
                 {recipes.map(recipe => <Recipe key={`${recipe.id}-${recipe.title}`} recipe={recipe}/>)}
             </Row>
             <Row>
+                {loading && <FontAwesomeIcon icon={faSpinner} spinPulse size='5x' />}
+            </Row>
+            <Row>
                 <Col sm={{
                     span:3,
                     offset:5,
@@ -96,9 +98,6 @@ export const Home = () => {
                         setPage(page+1)
                     }}>See More Recipes</Button>}
                 </Col>
-            </Row>
-            <Row>
-                {loading && <FontAwesomeIcon icon={faSpinner} spinPulse size='5x' />}
             </Row>
         </Container>
         </>
