@@ -1,216 +1,214 @@
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Josefin+Slab:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@700&family=Josefin+Slab:wght@400&display=swap");
 
 /* buttons */
 .btn-primary {
-    --bs-btn-bg: #FFADE5 !important;
-    --bs-btn-hover-bg: #FFFFFF !important;
-    --bs-btn-border-color: #FFADE5 !important;
-    --bs-btn-hover-border-color: #FFADE5 !important;
-    --bs-btn-color: #FFFFFF !important;
-    --bs-btn-hover-color: #FFADE5 !important;
-    font-family: Asap;
-    --bs-btn-border-radius: 2em !important;
-    padding: 0.25em 1em 0.25em 1em!important;
+  --bs-btn-bg: #ffade5 !important;
+  --bs-btn-hover-bg: #ffffff !important;
+  --bs-btn-border-color: #ffade5 !important;
+  --bs-btn-hover-border-color: #ffade5 !important;
+  --bs-btn-color: #ffffff !important;
+  --bs-btn-hover-color: #ffade5 !important;
+  font-family: Asap;
+  --bs-btn-border-radius: 2em !important;
+  padding: 0.25em 1em 0.25em 1em !important;
 }
 
 .delete-btn {
-    margin-bottom: 5px;
-    padding-bottom: 7px;
+  margin-bottom: 5px;
+  padding-bottom: 7px;
 }
 
-
 body {
-    background-color: #FFFFCC !important;
+  background-color: #ffffcc !important;
 }
 
 /* navbar */
 .navbar {
-    background-color: #FFADE5 !important;
-    font-family: Josefin Slab;
-    font-size: 1.25vw;
+  background-color: #ffade5 !important;
+  font-family: Josefin Slab;
+  font-size: 1.25vw;
 }
 
 .nav-link {
-    border: transparent 1px solid !important; 
-    color: #FFFFFF !important;
-    font-weight: 600 !important;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    transition: all .5s ease !important;
+  border: transparent 1px solid !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  transition: all 0.5s ease !important;
 }
 .nav-link:hover {
-    border-color: #FFFFFF !important;
-    border-radius: 2em !important;
+  border-color: #ffffff !important;
+  border-radius: 2em !important;
 }
 /* main title */
 .main-title {
-    border-bottom: transparent 3px solid !important; 
-    color: #FFFFFF !important;
-    font-family: Asap !important;
-    font-size: 2vw !important;
-    transition: all .5s ease !important;
-    padding-bottom: 0 !important;
-    cursor:pointer
+  border-bottom: transparent 3px solid !important;
+  color: #ffffff !important;
+  font-family: Asap !important;
+  font-size: 2vw !important;
+  transition: all 0.5s ease !important;
+  padding-bottom: 0 !important;
+  cursor: pointer;
 }
 
 .main-title:hover {
-    border-color: #FFFFFF !important;
+  border-color: #ffffff !important;
 }
 
 /* filter box */
 
 .filter-bar {
-    background-color: #FFFFFF !important;
-    margin-top: 2em !important;
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-    margin: 2em !important;
-    border: 1px solid #425061;
+  background-color: #ffffff !important;
+  margin-top: 2em !important;
+  padding-top: 2em !important;
+  padding-bottom: 2em !important;
+  margin: 2em !important;
+  border: 1px solid #425061;
 }
 
 input[type="checkbox"]:checked {
-    background-color: #425061;
-    border-color: #FFADE5;
+  background-color: #425061;
+  border-color: #ffade5;
 }
 
 .filter-checkbox {
-    display: inline !important;
-    margin-right: 0.5em;
+  display: inline !important;
+  margin-right: 0.5em;
 }
 
 .filter-checkbox-label {
-    font-family: Josefin Slab !important;;
-    color:  #425061 ;
-    font-size: 1.25vw;
-    margin-left: 1em;
+  font-family: Josefin Slab !important;
+  color: #425061;
+  font-size: 1.25vw;
+  margin-left: 1em;
 }
 /* recipes */
 .recipe-box {
-    padding: 1em;
-    border: 2px solid #FFADE5 !important;
-    margin-bottom: 2em;
-
+  padding: 1em;
+  border: 2px solid #ffade5 !important;
+  margin-bottom: 2em;
 }
 
 /* image */
 img {
-    border: 1.5px solid #FFADE5;
+  border: 1.5px solid #ffade5;
 }
 
 /* icons */
 .heart {
-    font-size: 2.3em;
-    color: #FFADE5;
-    cursor: pointer;
-    padding: 5px;
-    transition: all .4s ease !important;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  font-size: 2.3em;
+  color: #ffade5;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.4s ease !important;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .heart:hover {
-    color: #425061;
+  color: #425061;
 }
 
 .pencil {
-    font-size: 2.3em;
-    color: #425061;
-    cursor: pointer;
-    transition: all .5s ease !important;
+  font-size: 2.3em;
+  color: #425061;
+  cursor: pointer;
+  transition: all 0.5s ease !important;
 }
 
 .pencil:hover {
-    font-size: 2.3em;
-    color: grey
+  font-size: 2.3em;
+  color: grey;
 }
 
 .star {
-    color: #FFFFCC;
-    font-size: 1em;
-    margin-bottom: 20px;
-    background-color: #FFADE5;
-    padding: 0.5em .25em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  color: #ffffcc;
+  font-size: 1em;
+  margin-bottom: 20px;
+  background-color: #ffade5;
+  padding: 0.5em 0.25em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .single-recipe-star {
-    color: #FFFFCC;
-    background-color: #FFADE5;
-    font-size: 2vw;
-    padding: 5px;
-    margin-top: 20px;
-
+  color: #ffffcc;
+  background-color: #ffade5;
+  font-size: 2vw;
+  padding: 5px;
+  margin-top: 20px;
 }
 
 .single-recipe-star:hover {
-    color: #425061;
-    transition: all .5s ease !important;
-    cursor: pointer;
+  color: #425061;
+  transition: all 0.5s ease !important;
+  cursor: pointer;
 }
 
 .star svg {
-    margin-right: .25em;
-    font-size: 1rem;
+  margin-right: 0.25em;
+  font-size: 1rem;
 }
 
 /* forms */
 
 .headings {
-    font-family: Asap !important;
-    font-size: 1.50em;
-    color: #425061 !important;
-    margin-top: 8px;
-
+  font-family: Asap !important;
+  font-size: 1.5em;
+  color: #425061 !important;
+  margin-top: 8px;
 }
 
 .subheading-title {
-    font-family: Josefin Slab !important;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #425061;
+  font-family: Josefin Slab !important;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #425061;
 }
 
-input, textarea, select {
-    font-family: Josefin Slab !important;
+input,
+textarea,
+select {
+  font-family: Josefin Slab !important;
 }
 
 .card-css {
-    margin-top: 50px !important;
-    border: 2px solid #FFADE5 !important;
+  margin-top: 50px !important;
+  border: 2px solid #ffade5 !important;
 }
 
 /* recipes */
 .headings {
-    font-family: Asap, sans-serif !important;
-    margin-top: 20px  !important;
+  font-family: Asap, sans-serif !important;
+  margin-top: 20px !important;
 }
 
 .recipe-header-card {
-    background-color: #FFADE5 !important;
+  background-color: #ffade5 !important;
 }
 
 .card {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .card-header .heart {
-    color:#FFFFCC;
+  color: #ffffcc;
 }
 
 .card-header .heart:hover {
-    color:#ffffff;
+  color: #ffffff;
 }
 
 .badge.bg-primary {
-    --bs-primary-rgb: 255, 173, 229;
+  --bs-primary-rgb: 255, 173, 229;
 }
 
 .asap {
-    font-family: Asap !important;
+  font-family: Asap !important;
 }
 
 .josefin {
-    font-family: Josefin Slab;
+  font-family: Josefin Slab;
 }
