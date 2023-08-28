@@ -39,11 +39,11 @@ export const Recipe = (props) => {
                         <Col onClick={() => {
                                 navigate(`/recipe/${recipe.id}`)
                             }}>
-                            <h4>{recipe.title}</h4>
+                            <h4 className="asap">{recipe.title}</h4>
                             <Stack direction='horizontal' gap='2'>
                                 {recipe.categories.map(category => <Badge key={`${category.name}-${recipe.id}`}>{category.name}</Badge>)}
                             </Stack>
-                            <p>{recipe.description}</p>
+                            <p className="josefin">{recipe.description}</p>
                         </Col>
                     </Row>
                 </Container>

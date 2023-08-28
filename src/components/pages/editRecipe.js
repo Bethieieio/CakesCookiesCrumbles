@@ -27,6 +27,7 @@ export const EditRecipe = () => {
     const {id} = useParams()
 
     const [openModal, setOpenModal] = useState(false)
+    const [pageError, setPageError] = useState()
 
     if (
         user === null
@@ -39,6 +40,7 @@ export const EditRecipe = () => {
                 result = await axios.get(`recipes/${id}`)
             }catch(error){
                 if(error.response.status !== 404) throw error
+                setPageError("Recipe Not Found")
             }
 
             if (result && result.status === 200){
@@ -85,14 +87,14 @@ export const EditRecipe = () => {
             <Row>
                 <Col md={{ span: 6, offset: 3 }}>
                     <Card className='card-css'>
-                    <Card.Header className='headings d-flex justify-content-around'>{recipe.title ? <>
+                    <Card.Header className='headings d-flex justify-content-around'>{recipe && !pageError ? <>
                         <h5> Edit {recipe.title} </h5>
                         <button className='btn btn-primary delete-btn' onClick={() => {
                             setOpenModal(true)
                         }} aria-label='Delete recipe'>Delete Recipe</button>
                     </>: 'recipe'}</Card.Header>
                     <Card.Body>
-                        {loading ? (<>Loading...</>) : recipe.title ? (
+                        {loading ? (<>Loading...</>) : recipe && !pageError ? (
                             <Form onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="title">
                                 <Form.Label>Title</Form.Label>
