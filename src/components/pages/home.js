@@ -11,7 +11,7 @@ export const Home = () => {
     const [showMoreButton, setShowMoreButton] = useState(true)
     const [recipes, setRecipes] = useState([])
     const [loading, setLoading] = useState(true)
-    const [filters, setFilters] = useState({categories : []})
+    const [filters, setFilters] = useState({categories : [], isIwner: false })
 
     const getPage = async (reset = false) => {              
         if (reset) setRecipes([])
@@ -20,6 +20,7 @@ export const Home = () => {
             const result = await axios.get(`recipes?page=${page}`, {
                 params : {
                     categories : filters.categories,
+                    isOwner: filters.isOwner,
                 },
                 paramsSerializer: params => {
                     return qs.stringify(params, {
@@ -71,6 +72,14 @@ export const Home = () => {
                             }
                         }}/>{category}
                     </FormLabel>)}
+                    <FormLabel className="filter-checkbox-label">
+                        <Form.Check className="filter-checkbox" type='checkbox' value={true} onChange={() => {
+                            setFilters({
+                                ...filters,
+                                isOwner: !filters.isOwner,
+                            })
+                        }}/> Your Recipes
+                    </FormLabel>
                 </Col>
                 <Row>
                     <Col className="d-flex justify-content-center">
