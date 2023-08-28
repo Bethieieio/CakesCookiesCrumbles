@@ -203,3 +203,6 @@ input, textarea, select {
     color:#ffffff;
 }
 
+.badge.bg-primary {
+    --bs-primary-rgb: 255, 173, 229;
+}
