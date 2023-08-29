@@ -155,9 +155,9 @@ assets/readme-images/incorrect-login.png
 Before the user can sign in, they need to create an account.
 An unique username needs to be chose, followed by the users chosen password and it's confirmation.
 The username is unable to create an account of the same name as someone else or have a password that is too commom ie: password.
-assets/readme-images/signup-screen.png
-assets/readme-images/signup-login-exists.png
-assets/readme-images/signup-password-common.png
+![assets/readme-images/signup-screen.png]
+![assets/readme-images/signup-login-exists.png]
+![assets/readme-images/signup-password-common.png]
 
 #### Navigation Bar
 For this site, the navigation bar is very simple.
