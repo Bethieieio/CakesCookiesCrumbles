@@ -13,8 +13,17 @@ INSERT AM I RESPONSIVE HERE
 ## Contents
 
 - [**Objective**](#objective)
-- [**User Experience**](#user-experience) - [Project Goals](#project-goals) - [Components](#components) - [Design Choices](#design-choices) - [Project Management](#project-management) -[**Permissions**](#permissions)  
-   -[Logged Out User](#logged-out-user) -[Logged In User](#logged-in-user) -[**Features**](#features) -[Current Features](#current-features) -[Future Features](future-features)
+- [**User Experience**](#user-experience) 
+  - [Project Goals](#project-goals) 
+  - [Components](#components) 
+  - [Design Choices](#design-choices) 
+  - [Project Management](#project-management) 
+-[**Permissions**](#permissions)  
+   -[Logged Out User](#logged-out-user) 
+   -[Logged In User](#logged-in-user) 
+-[**Features**](#features) 
+   -[Current Features](#current-features) 
+   -[Future Features](future-features)
 
 ## Objective
 
@@ -46,8 +55,8 @@ In Code Code Institutes words:
 
 User Stories
 - As an authenticated user:
-- “”, I would like to be able to login 
-- “”, I would like to be able to post a recipe
+- I would like to be able to login 
+- I would like to be able to post a recipe
 - I would like to be able to upload a picture of my recipe.
 - I would like to be able to edit the recipe if need be.
 - I  would like to be able to delete the recipe if I want to.
@@ -102,8 +111,8 @@ I chose Asap for the title for its round and bold apparence. It is easy to read 
 
 ### Project Management
 
-I use Github Projects to create a kanban board to help plan and organise my project.
-talk about the use of labels and stuff idk
+I use Github Projects to create a kanban board to help plan and organise my project. <br>
+https://github.com/users/Bethieieio/projects/3
 
 [Back to top](#contents)
 
@@ -135,9 +144,29 @@ A logged in user can view all of the content a logged out user can see but also 
 
 ### Current Features
 
-log in
-sign up
-nav
+#### Log In page
+The user log in page allows users that have an account to create their own recipe and other features.
+The user needs to input their username and password. An error appears if the user inputs the incorrect details.
+assets/readme-images/log-in.png
+assets/readme-images/blank-login.png
+assets/readme-images/incorrect-login.png
+
+#### Sign up
+Before the user can sign in, they need to create an account.
+An unique username needs to be chose, followed by the users chosen password and it's confirmation.
+The username is unable to create an account of the same name as someone else or have a password that is too commom ie: password.
+assets/readme-images/signup-screen.png
+assets/readme-images/signup-login-exists.png
+assets/readme-images/signup-password-common.png
+
+#### Navigation Bar
+For this site, the navigation bar is very simple.
+For users that are not logged in, they will see links to the Sign UP and Login pages.
+If the users are logged in, they will see "Create a Recipe" and Sign Out links.
+assets/readme-images/logged-in-navbar.png
+assets/readme-images/logged-out-navbar.png
+
+
 homepage recipe headers
 single recipe
 fave
