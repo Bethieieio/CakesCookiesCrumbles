@@ -147,24 +147,24 @@ A logged in user can view all of the content a logged out user can see but also 
 #### Log In page
 The user log in page allows users that have an account to create their own recipe and other features.
 The user needs to input their username and password. An error appears if the user inputs the incorrect details.
-assets/readme-images/log-in.png
-assets/readme-images/blank-login.png
-assets/readme-images/incorrect-login.png
+![image](assets/readme-images/log-in.png)
+![image](assets/readme-images/blank-login.png)
+![image](assets/readme-images/incorrect-login.png)
 
 #### Sign up
 Before the user can sign in, they need to create an account.
 An unique username needs to be chose, followed by the users chosen password and it's confirmation.
 The username is unable to create an account of the same name as someone else or have a password that is too commom ie: password.
-!(sign up screen)[assets/readme-images/signup-screen.png]
-!()[assets/readme-images/signup-login-exists.png]
-!()[assets/readme-images/signup-password-common.png]
+![image](assets/readme-images/signup-screen.png)
+![image](assets/readme-images/signup-login-exists.png)
+![image](assets/readme-images/signup-password-common.png)
 
 #### Navigation Bar
 For this site, the navigation bar is very simple.
 For users that are not logged in, they will see links to the Sign UP and Login pages.
 If the users are logged in, they will see "Create a Recipe" and Sign Out links.
-assets/readme-images/logged-in-navbar.png
-assets/readme-images/logged-out-navbar.png
+![image](assets/readme-images/logged-in-navbar.png)
+![image](assets/readme-images/logged-out-navbar.png)
 
 
 homepage recipe headers
