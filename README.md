@@ -44,6 +44,25 @@ In Code Code Institutes words:
 
 ### User Stories
 
+User Stories
+- As an authenticated user:
+- “”, I would like to be able to login 
+- “”, I would like to be able to post a recipe
+- I would like to be able to upload a picture of my recipe.
+- I would like to be able to edit the recipe if need be.
+- I  would like to be able to delete the recipe if I want to.
+- I would like to be able to filter the recipes so I can look at categories of my choice. 
+- I would like to view all my recipes on a profile page
+- I would like to be able to write a review on other user’s  recipes.
+- I would like to be able to rate other user’s recipes.
+- I would like to filter the recipes so I  can only see my recipes 
+- I would like to favorite recipes.
+- I would like to rate other people’s recipes.
+- As an unauthenticated user
+- I would like to view recipes of users who have uploaded their recipes 
+- As a user, I would like to be able to sign up for the site.
+
+
 [Back to top](#contents)
 
 ### Design Prototype (Wireframes)
