@@ -185,9 +185,18 @@ When the user is not logged in and click the heart, they are taken to the log in
 ![image](assets/readme-images/not-liked-favourite.png) <br>
 ![image](assets/readme-images/liked-favourite.png) <br>
 
+#### Rating
+The user can rate a recipe by scoring it out of 5 stars on the main recipe page, by clicking on the star symbol. A model will pop up, once clicking the star the user think the recipe is worth.
+The user can only rate a recipe if they are logged in.
+If a unlogged in user tries to rate a recipe, they will get lead to the login page.
+On the recipe header on the homepage, you can see the average rating the recipe has.
+![image](assets/readme-images/average-rating.png)
+![image](assets/readme-images/rating-modal-2.png)
+![image](assets/readme-images/rating-modal.png)
+![image](assets/readme-images/rating-symbol.png)
 
 
-rating
+
 average rating
 edit recipe
 delete recipe
