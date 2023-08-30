@@ -23,7 +23,11 @@ INSERT AM I RESPONSIVE HERE
    - [Logged In User](#logged-in-user) 
 - [**Features**](#features) 
    - [Current Features](#current-features) 
-   - [Future Features](future-features)
+   - [Future Features](#future-features)
+- [**Technologies Used**](#technologies-used)
+- [**Testing**](#testing)
+
+    
 
 ## Objective
 
@@ -222,6 +226,7 @@ If I get the chance again, I would like to add the following features to Cakes, 
 - To have more images on one recipe.
 - To have different categories such as vegan, gluten free, nut free etc and to have these as filters too.
 
+[Back to top](#contents)
 ## Technologies Used
 
 ### Languages
@@ -249,3 +254,27 @@ If I get the chance again, I would like to add the following features to Cakes, 
 - [VS Code](https://code.visualstudio.com/) IDE. Where all my code is written.
 - [Adobe](https://helpx.adobe.com/support/xd.html) Used to create wireframes.
 - [Heroku](https://www.heroku.com/) Deploy and host backend.
+
+[Back to top](#contents)
+## Testing 
+
+### Lighthouse Testing 
+I am over all happy with the results for the Lighthouse Testing. I would one day like to imopve the Performance one by figuring out how to have a restriction for image sizes uploaded to the site.
+
+- Home Page
+![image](assets/readme-images/home-lighthouse.png)<br>
+
+- Log in
+![image](assets/readme-images/login-lighthouse.png)<br>
+
+- Sign Up 
+![image](assets/readme-images/signup-lighthouse.png)<br>
+
+- Single Recipe Page
+![image](assets/readme-images/single-recipe-lighthouse.png)<br>
+
+- Edit Recipe
+![image](assets/readme-images/edit-recipe-lighthouse.png)<br>
+
+- Create A Recipe
+![image](assets/readme-images/create-recipe-lighthouse.png)<br>
