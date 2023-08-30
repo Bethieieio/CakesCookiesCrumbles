@@ -18,12 +18,12 @@ INSERT AM I RESPONSIVE HERE
   - [Components](#components) 
   - [Design Choices](#design-choices) 
   - [Project Management](#project-management) 
--[**Permissions**](#permissions)  
-   -[Logged Out User](#logged-out-user) 
-   -[Logged In User](#logged-in-user) 
--[**Features**](#features) 
-   -[Current Features](#current-features) 
-   -[Future Features](future-features)
+- [**Permissions**](#permissions)  
+   - [Logged Out User](#logged-out-user) 
+   - [Logged In User](#logged-in-user) 
+- [**Features**](#features) 
+   - [Current Features](#current-features) 
+   - [Future Features](future-features)
 
 ## Objective
 
@@ -55,21 +55,21 @@ In Code Code Institutes words:
 
 User Stories
 - As an authenticated user:
-- I would like to be able to login 
-- I would like to be able to post a recipe
-- I would like to be able to upload a picture of my recipe.
-- I would like to be able to edit the recipe if need be.
-- I  would like to be able to delete the recipe if I want to.
-- I would like to be able to filter the recipes so I can look at categories of my choice. 
-- I would like to view all my recipes on a profile page
-- I would like to be able to write a review on other user’s  recipes.
-- I would like to be able to rate other user’s recipes.
-- I would like to filter the recipes so I  can only see my recipes 
-- I would like to favorite recipes.
-- I would like to rate other people’s recipes.
+  - I would like to be able to login 
+  - I would like to be able to post a recipe
+  - I would like to be able to upload a picture of my recipe.
+  - I would like to be able to edit the recipe if need be.
+  - I would like to be able to delete the recipe if I want to.
+  - I would like to be able to filter the recipes so I can look at categories of my choice. 
+  - I would like to view all my recipes on a profile page
+  - I would like to be able to write a review on other user’s  recipes.
+  - I would like to be able to rate other user’s recipes.
+  - I would like to filter the recipes so I  can only see my recipes 
+  - I would like to favorite recipes.
+  - I would like to rate other people’s recipes.
 - As an unauthenticated user
-- I would like to view recipes of users who have uploaded their recipes 
-- As a user, I would like to be able to sign up for the site.
+  - I would like to view recipes of users who have uploaded their recipes 
+  - As a user, I would like to be able to sign up for the site.
 
 
 [Back to top](#contents)
@@ -153,34 +153,34 @@ The user needs to input their username and password. An error appears if the use
 
 #### Sign up
 Before the user can sign in, they need to create an account.
-An unique username needs to be chose, followed by the users chosen password and it's confirmation.
-The username is unable to create an account of the same name as someone else or have a password that is too commom ie: password.
+An unique username needs to be chosen, followed by the user's chosen password and it's confirmation.
+The username is unable to create an account of the same name as someone else or have a password that is too commom i.e: password.
 ![image](assets/readme-images/signup-screen.png)
 ![image](assets/readme-images/signup-login-exists.png)
 ![image](assets/readme-images/signup-password-common.png)
 
 #### Navigation Bar
 For this site, the navigation bar is very simple.
-For users that are not logged in, they will see links to the Sign UP and Login pages.
+For users that are not logged in, they will see links to the Sign Up and Login pages.
 If the users are logged in, they will see "Create a Recipe" and Sign Out links. <br>
 ![image](assets/readme-images/logged-in-navbar.png) <br>
 ![image](assets/readme-images/logged-out-navbar.png)<br>
 
 
 #### Recipes on Home Page
-On the homepage, it is full of the recipes headers. They contain the name of the recipe, the description and the image. It also contains the tag, the rating score and the favourite toggle button (if the user is logged in). If the user is logged in, on a recipe they have written, displays a pencil button that allows the user to edit the recipe if they wish. If the user is not logged in or they did not write the recipe, they will not see this button.
-![image](assets/readme-images/recipe-header.png)
+On the homepage, it is full of the recipes headers. They contain the name of the recipe, the description and the image. It also contains the tag, the rating score and the favourite toggle button (if the user is logged in). If the user is logged in, on a recipe they have written, displays a pencil button that allows the user to edit the recipe if they wish. If the user is not logged in or they did not write the recipe, they will not see this button.<br>
+![image](assets/readme-images/recipe-header.png)<br>
 
 #### Single Recipe
 Once the user has clicked on the recipe, it takes them to it's main recipe page.
 The title is at the top. With the favourite buttons and ratings button on either side.
 In the main section, the image is on the top right, next to it are the recipe's ingredients. 
-Below is the recipes description and the instructions.
-![image](assets/readme-images/main-recipe.png)
+Below is the recipes description and the instructions.<br>
+![image](assets/readme-images/main-recipe.png)<br>
 
 #### Favourites Toggle
 The favourite toggle is in a shape of a heart. They are located on every recipe header and in the main recipe.
-When the user is not logged in and click the heart, they are taken to the log in page, as the user cannot favourite a recipe if they are not logged in. If the user is logged in, it is added to their favourites. The user van view their favourites by using the filter bar. If the heart symbol's colour is not filled in if the user has not liked the recipe. Once the user has liked the recipe, the hearts colour is filled in. <br>
+When the user is not logged in and click the heart, they are taken to the log in page, as the user cannot favourite a recipe if they are not logged in. If the user is logged in, it is added to their favourites. The user can view their favourites by using the filter bar. The heart symbol's colour is not filled in if the user has not liked the recipe. Once the user has liked the recipe, the hearts colour is filled in. <br>
 ![image](assets/readme-images/main-recipe-favourite.png) <br>
 ![image](assets/readme-images/not-liked-favourite.png) <br>
 ![image](assets/readme-images/liked-favourite.png) <br>
@@ -189,27 +189,27 @@ When the user is not logged in and click the heart, they are taken to the log in
 The user can rate a recipe by scoring it out of 5 stars on the main recipe page, by clicking on the star symbol. A model will pop up, once clicking the star the user think the recipe is worth.
 The user can only rate a recipe if they are logged in.
 If a unlogged in user tries to rate a recipe, they will get lead to the login page.
-On the recipe header on the homepage, you can see the average rating the recipe has.
-![image](assets/readme-images/average-rating.png)
-![image](assets/readme-images/rating-modal-2.png)
-![image](assets/readme-images/rating-modal.png)
-![image](assets/readme-images/rating-symbol.png)
+On the recipe header on the homepage, you can see the average rating the recipe has.<br>
+![image](assets/readme-images/average-rating.png)<br>
+![image](assets/readme-images/rating-modal-2.png)<br>
+![image](assets/readme-images/rating-modal.png)<br>
+![image](assets/readme-images/rating-symbol.png)<br>
 
 #### Edit Recipe and Delete
 If a logged in uploader wishes to edit their recipe, they can by going into the main recipe page and clicking on the pencil icon. They can only edit their own recipe. They can change anything from the title to the description. They can also change the image and the tags. Once in the editing screen, they can also delete the recipe if they so wish.
-Once they click the button to do this, a modal will pop up confirming if they wish to delete the recipe.
-![image](assets/readme-images/edit-symbol.png)
-![image](assets/readme-images/edit-recipe.png)
-![image](assets/readme-images/delete-button.png)
-![image](assets/readme-images/delete-receipe-modal.png)
+Once they click the button to do this, a modal will pop up confirming if they wish to delete the recipe.<br>
+![image](assets/readme-images/edit-symbol.png)<br>
+![image](assets/readme-images/edit-recipe.png)<br>
+![image](assets/readme-images/delete-button.png)<br>
+![image](assets/readme-images/delete-receipe-modal.png)<br>
 
 #### Categories & Filter Bar
 A user can filter out recipes by catagory, favourites, users recipes.
 They can choose as many options as possible, click update and then the page updates to the chosen options.
-A logged in user has more options than a user that is not logged in. They can filter out their favourite recipes and thier own recipes.
-![image](assets/readme-images/logged-in-filter-bar.png)
-![image](assets/readme-images/unlogged-in-filter-bar.png)
-![image](assets/readme-images/logged-in-filter-bar.png)
+A logged in user has more options than a user that is not logged in. They can filter out their favourite recipes and thier own recipes.<br>
+![image](assets/readme-images/logged-in-filter-bar.png)<br>
+![image](assets/readme-images/unlogged-in-filter-bar.png)<br>
+![image](assets/readme-images/logged-in-filter-bar.png)<br>
 
 
 #### Future Features
@@ -218,7 +218,7 @@ If I get the chance again, I would like to add the following features to Cakes, 
 
 - The ablity to comment on other peoples recipes. (Logged in User).
 - To be able to view all of another users recipes on the same page.
-- To filter recipes on the homepage by number of favourites and rating.
+- To filter recipes on the homepage by number of favourites and rating score.
 - To have more images on one recipe.
 - To have different categories such as vegan, gluten free, nut free etc and to have these as filters too.
 
@@ -227,7 +227,7 @@ If I get the chance again, I would like to add the following features to Cakes, 
 ### Languages
 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) the massive bulk of the frontend of this website is written in Javascript. It is a single page React Application.
-  [HTML5](https://html.com/html5/) to layout and structure the websites content.
+- [HTML5](https://html.com/html5/) to layout and structure the websites content.
 - [CSS](https://www.w3schools.com/css/) to help present the website to be cute and pretty yay
 
 ### Libraries and Frameworks
@@ -242,6 +242,10 @@ If I get the chance again, I would like to add the following features to Cakes, 
 - [Axios](https://axios-http.com/) HTTP client for making network requests.
 - [React Bootstrap](https://react-bootstrap.github.io/) React components for using Bootstrap with React.
 - [React Dom](https://legacy.reactjs.org/docs/react-dom.html) a react librbary for running react in the webpage
-- React Router Dom enables routing and in app navigation.
+- [React Router Dom](https://www.npmjs.com/package/react-router-dom) enables routing and in app navigation.
 
 ### Other Tools
+- [GitHub](https://github.com/) Version control, deploy and host front end, created project board and issues.
+- [VS Code](https://code.visualstudio.com/) IDE. Where all my code is written.
+- [Adobe](https://helpx.adobe.com/support/xd.html) Used to create wireframes.
+- [Heroku](https://www.heroku.com/) Deploy and host backend.
