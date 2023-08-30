@@ -179,6 +179,13 @@ Below is the recipes description and the instructions.
 ![image](assets/readme-images/main-recipe.png)
 
 #### Favourites Toggle
+The favourite toggle is in a shape of a heart. They are located on every recipe header and in the main recipe.
+When the user is not logged in and click the heart, they are taken to the log in page, as the user cannot favourite a recipe if they are not logged in. If the user is logged in, it is added to their favourites. The user van view their favourites by using the filter bar. If the heart symbol's colour is not filled in if the user has not liked the recipe. Once the user has liked the recipe, the hearts colour is filled in. <br>
+![image](assets/readme-images/main-recipe-favourite.png) <br>
+![image](assets/readme-images/not-liked-favourite.png) <br>
+![image](assets/readme-images/liked-favourite.png) <br>
+
+
 
 rating
 average rating
@@ -201,7 +208,7 @@ If I get the chance again, I would like to add the following features to Cakes, 
 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) the massive bulk of the frontend of this website is written in Javascript. It is a single page React Application.
   [HTML5](https://html.com/html5/) to layout and structure the websites content.
-- [CSS][https://www.w3schools.com/css/] to help present the website to be cute and pretty yay
+- [CSS](https://www.w3schools.com/css/) to help present the website to be cute and pretty yay
 
 ### Libraries and Frameworks
 
