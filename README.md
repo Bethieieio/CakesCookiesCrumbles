@@ -178,7 +178,8 @@ In the main section, the image is on the top right, next to it are the recipe's 
 Below is the recipes description and the instructions.
 ![image](assets/readme-images/main-recipe.png)
 
-fave
+#### Favourites Toggle
+
 rating
 average rating
 edit recipe
