@@ -162,13 +162,22 @@ The username is unable to create an account of the same name as someone else or 
 #### Navigation Bar
 For this site, the navigation bar is very simple.
 For users that are not logged in, they will see links to the Sign UP and Login pages.
-If the users are logged in, they will see "Create a Recipe" and Sign Out links.
-![image](assets/readme-images/logged-in-navbar.png)
-![image](assets/readme-images/logged-out-navbar.png)
+If the users are logged in, they will see "Create a Recipe" and Sign Out links. <br>
+![image](assets/readme-images/logged-in-navbar.png) <br>
+![image](assets/readme-images/logged-out-navbar.png)<br>
 
 
-homepage recipe headers
-single recipe
+#### Recipes on Home Page
+On the homepage, it is full of the recipes headers. They contain the name of the recipe, the description and the image. It also contains the tag, the rating score and the favourite toggle button (if the user is logged in). If the user is logged in, on a recipe they have written, displays a pencil button that allows the user to edit the recipe if they wish. If the user is not logged in or they did not write the recipe, they will not see this button.
+![image](assets/readme-images/recipe-header.png)
+
+#### Single Recipe
+Once the user has clicked on the recipe, it takes them to it's main recipe page.
+The title is at the top. With the favourite buttons and ratings button on either side.
+In the main section, the image is on the top right, next to it are the recipe's ingredients. 
+Below is the recipes description and the instructions.
+![image](assets/readme-images/main-recipe.png)
+
 fave
 rating
 average rating
