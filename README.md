@@ -195,11 +195,22 @@ On the recipe header on the homepage, you can see the average rating the recipe 
 ![image](assets/readme-images/rating-modal.png)
 ![image](assets/readme-images/rating-symbol.png)
 
+#### Edit Recipe and Delete
+If a logged in uploader wishes to edit their recipe, they can by going into the main recipe page and clicking on the pencil icon. They can only edit their own recipe. They can change anything from the title to the description. They can also change the image and the tags. Once in the editing screen, they can also delete the recipe if they so wish.
+Once they click the button to do this, a modal will pop up confirming if they wish to delete the recipe.
+![image](assets/readme-images/edit-symbol.png)
+![image](assets/readme-images/edit-recipe.png)
+![image](assets/readme-images/delete-button.png)
+![image](assets/readme-images/delete-receipe-modal.png)
 
+#### Categories & Filter Bar
+A user can filter out recipes by catagory, favourites, users recipes.
+They can choose as many options as possible, click update and then the page updates to the chosen options.
+A logged in user has more options than a user that is not logged in. They can filter out their favourite recipes and thier own recipes.
+![image](assets/readme-images/logged-in-filter-bar.png)
+![image](assets/readme-images/unlogged-in-filter-bar.png)
+![image](assets/readme-images/logged-in-filter-bar.png)
 
-average rating
-edit recipe
-delete recipe
 
 #### Future Features
 
