@@ -2,7 +2,7 @@
 
 Cakes, Cookies and Crumbles is a site where users can view and upload upload their recipes, specifically their cakes, cookies and crumbles. They can also view other people recipes, favouriting them if they wish to bake the recipe for themselves and can rate the recipe out of 5 stars. Users can filter recipes by category, favourites and their own recipes. The user can chose to edit and delete their own recipes if they wish. Overall, the site is a place for people to share their own tasty treats with other baking enthusiasts.
 
-You can view Cakes, Cookies and Crumbles here (create your own recipe if you want!) > [Cakes, Cookies and Crumbles](LINK TO FRONT END DEPLOYMENT)
+You can view Cakes, Cookies and Crumbles here (create your own recipe if you want!) > [Cakes, Cookies and Crumbles](https://bethieieio.github.io/CakesCookiesCrumbles/)
 
 - If you want to see the docs for the backend? [IT'S HERE](https://cakes-cookies-crumbles-c12827854ad0.herokuapp.com/swagger/)
 - If you want to read more, here is the backend README if you so wish. [HERE](https://github.com/Bethieieio/ccc-backend#readme)
