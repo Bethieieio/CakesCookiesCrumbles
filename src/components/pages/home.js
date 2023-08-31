@@ -23,7 +23,7 @@ export const Home = () => {
     if (reset) setRecipes([]);
     try {
       setLoading(true);
-      const result = await axios.get(`recipes`, {
+      const result = await axios.get(`recipes/`, {
         params: {
           categories: filters.categories,
           isOwner: filters.isOwner,
