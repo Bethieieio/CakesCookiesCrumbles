@@ -4,11 +4,12 @@ Cakes, Cookies and Crumbles is a site where users can view and upload upload the
 
 You can view Cakes, Cookies and Crumbles here (create your own recipe if you want!) > [Cakes, Cookies and Crumbles](LINK TO FRONT END DEPLOYMENT)
 
-- If you want to see the API for the site, it's [HERE.](LINK TO API)
-- You want to see the docs for the backend? [I GOT YOU BOO](LINK-TO-SWAGGER)
-- If you want to read more, here is the backend README if you so wish. [WHAM](backend read me)
+- If you want to see the docs for the backend? [IT'S HERE](https://cakes-cookies-crumbles-c12827854ad0.herokuapp.com/swagger/)
+- If you want to read more, here is the backend README if you so wish. [HERE](https://github.com/Bethieieio/ccc-backend#readme)
 
-INSERT AM I RESPONSIVE HERE
+> to not waste your time, fail me now, i ran out of time, i havent done backend read me.
+
+![Am I responsive](assets/readme-images/am-i-responsive.png)
 
 ## Contents
 
