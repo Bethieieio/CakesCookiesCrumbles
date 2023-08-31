@@ -279,3 +279,24 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 
 - Create A Recipe
 ![image](assets/readme-images/create-recipe-lighthouse.png)<br>
+
+[Back to top](#contents)
+
+## Deployment to Heroku 
+This is how I deployed the backend of this site to Heroku
+1. I Created a new app on Heroku
+![image](assets/readme-images/deploy-to-heroku1.png)<br>
+2. I gave the app a unique name and chosen the region where I am from.
+![image](assets/readme-images/deploy-to-heroku2.png)<br>
+3. I then linked my Github backend repository to Heroku.
+![image](assets/readme-images/deploy-to-heroku3.png)<br>
+4. I then inputted all the necessary config vars to Heroku.
+![image](assets/readme-images/deploy-to-heroku4.png)<br>
+5. I input the Python buildback.
+![image](assets/readme-images/deploy-to-heroku5.png)<br>
+6. I created the Procfile that so Heroku knows what profile to run? 
+![image](assets/readme-images/deploy-to-heroku6.png)<br>
+7. I chosen to deploy the main branch.
+![image](assets/readme-images/deploy-to-heroku7.png)<br>
+8. I added the Heroku app host to my origins for CORS.
+![image](assets/readme-images/deploy-to-heroku8.png)<br>

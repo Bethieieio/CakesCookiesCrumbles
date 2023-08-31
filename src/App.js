@@ -14,7 +14,7 @@ import { Home } from "./components/pages/home";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={'CakesCookiesCrumbles'}>
       <CurrentUserProvider>
         <div className="App">
           <header className="App-header">
