@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CakesCookiesCrumbles/static/css/main.ee34d888.css",
-    "main.js": "/CakesCookiesCrumbles/static/js/main.659b9f4d.js",
+    "main.js": "/CakesCookiesCrumbles/static/js/main.63f96165.js",
     "static/js/787.98eeceec.chunk.js": "/CakesCookiesCrumbles/static/js/787.98eeceec.chunk.js",
     "index.html": "/CakesCookiesCrumbles/index.html",
     "main.ee34d888.css.map": "/CakesCookiesCrumbles/static/css/main.ee34d888.css.map",
-    "main.659b9f4d.js.map": "/CakesCookiesCrumbles/static/js/main.659b9f4d.js.map",
+    "main.63f96165.js.map": "/CakesCookiesCrumbles/static/js/main.63f96165.js.map",
     "787.98eeceec.chunk.js.map": "/CakesCookiesCrumbles/static/js/787.98eeceec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ee34d888.css",
-    "static/js/main.659b9f4d.js"
+    "static/js/main.63f96165.js"
   ]
 }
