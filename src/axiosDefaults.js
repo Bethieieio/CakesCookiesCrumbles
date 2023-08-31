@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_HOST
 axios.defaults.withCredentials = true;
 
 export const axiosReq = axios.create();
