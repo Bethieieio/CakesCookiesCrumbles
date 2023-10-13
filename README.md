@@ -39,6 +39,12 @@ In Code Code Institutes words:
 
 > In this project, you will design and build a content-sharing web application with React and an API (Django Rest Framework) Back-End. This will allow your users to browse and comment/ like each other's content as well as add, edit and delete their own.
 
+## Development
+When developing locally, use the below command to start the React app.
+```
+$ npm run start
+```
+
 ## User Experience
 
 ### Project Goals
@@ -259,7 +265,7 @@ If I get the chance again, I would like to add the following features to Cakes, 
 [Back to top](#contents)
 ## Testing 
 
-### Lighthouse Testing 
+### Lighthouse Testing
 I am over all happy with the results for the Lighthouse Testing. I would one day like to imopve the Performance one by figuring out how to have a restriction for image sizes uploaded to the site.
 
 - Home Page
