@@ -358,3 +358,29 @@ This is how I deployed the backend of this site to Heroku
 - Result : The recipe was submitted with no faults. I was directed back to the homepage with my recipe in view.
 ![image][assets/readme-images/readme-testing-createrecipe.png]
 
+- Implementation : To prevent a user from editing another users recipe.
+- Expectation : The user should not be allowed to edit any recipe other than their own. 
+- Test : I attempted to navigate to an edit recipe page on a recipe that I did not own.
+- Result : I was navigated away from the page. The only way to edit a recipe is to own it. Seeing pencil icon on a recipe on the homepage indicates that the recipe is yours and that it can be edited by you.
+> Navaigation happened to quick to take a screenshot.
+![image][assets/readme-images/readme-testing-edit-recipe-notmine.png]
+
+- Implementation : To delete a recipe.
+- Expectation : For the user to be able to remove a recipe.
+- Test : To delete a recipe that I have written.
+- Result : I clicked on the delete recipe button. A pop up appreared asking me if I definitely wanted to delete recipe. I clicked 'yes'. I was this directed to the homepage with my recipe no longer on the homepage.
+![image][assets/readme-images/readme-test-deleterecipe1.png]
+![image][assets/readme-images/readme-test-deleterecipe2.png]
+![image][assets/readme-images/readme-test-deleterecipe3.png]
+
+
+- Implementation :
+- Expectation :
+- Test : 
+- Result : 
+
+- Implementation :
+- Expectation :
+- Test : 
+- Result : 
+
