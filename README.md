@@ -338,40 +338,40 @@ This is how I deployed the backend of this site to Heroku
 - Expectation : When the user is logged into their account, they should be directed to the homepage.
 - Test : I logged into my account with the correct credentials.
 - Result : The site directed me to the homepage when I logged in correctly. The test was successful.
-![image][assets/readme-images/read-me-test-homepage.png]
+![image](assets/readme-images/read-me-test-homepage.png)
 
 - Implementation : Logging in with incorrect credentials.
 - Expectation : If the user either the wrong username and password combination, they should recieve a validation error.
 - Test : I attempted to log in with an incorrect password. I then to log in with an incorrect username.
 - Result : The validation error was present when I attempted to log in with the incorrect credentials. The test was successful.
-![image][assets/readme-images/read-me-wrong-password.png]
+![image](assets/readme-images/read-me-wrong-password.png)
 
 - Implementation : Cannot create a recipe with invalid fields
 - Expectation : If any of the form fields are left blank, validation errors will appear on the ones that are blank.
 - Test : To try and submit an empty recipe.
 - Result : The validation error was present when I attempted to create an empty recipe. The test was successful
-![image][assets/readme-images/read-me-testing-empty-form.png]
+![image](assets/readme-images/read-me-testing-empty-form.png)
 
 - Implementation : To sucessfully create a recipe.
 - Expectation : The recipe should be submitted successfully and then the user should be directed to the homepage with their new recipe on the top left corner of the page.
 - Test : I created a recipe with an image of myself. 
 - Result : The recipe was submitted with no faults. I was directed back to the homepage with my recipe in view.
-![image][assets/readme-images/readme-testing-createrecipe.png]
+![image](assets/readme-images/readme-testing-createrecipe.png)
 
 - Implementation : To prevent a user from editing another users recipe.
 - Expectation : The user should not be allowed to edit any recipe other than their own. 
 - Test : I attempted to navigate to an edit recipe page on a recipe that I did not own.
 - Result : I was navigated away from the page. The only way to edit a recipe is to own it. Seeing pencil icon on a recipe on the homepage indicates that the recipe is yours and that it can be edited by you.
 > Navaigation happened to quick to take a screenshot.
-![image][assets/readme-images/readme-testing-edit-recipe-notmine.png]
+![image](assets/readme-images/readme-testing-edit-recipe-notmine.png)
 
 - Implementation : To delete a recipe.
 - Expectation : For the user to be able to remove a recipe.
 - Test : To delete a recipe that I have written.
 - Result : I clicked on the delete recipe button. A pop up appreared asking me if I definitely wanted to delete recipe. I clicked 'yes'. I was this directed to the homepage with my recipe no longer on the homepage.
-![image][assets/readme-images/readme-test-deleterecipe1.png]
-![image][assets/readme-images/readme-test-deleterecipe2.png]
-![image][assets/readme-images/readme-test-deleterecipe3.png]
+![image](assets/readme-images/readme-test-deleterecipe1.png)
+![image](assets/readme-images/readme-test-deleterecipe2.png)
+![image](assets/readme-images/readme-test-deleterecipe3.png)
 
 
 - Implementation :
