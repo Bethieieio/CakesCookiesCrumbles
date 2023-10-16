@@ -316,3 +316,45 @@ This is how I deployed the backend of this site to Heroku
 ![image](assets/readme-images/deploy-to-heroku7.png)<br>
 11. I added the Heroku app host to my origins for CORS.
 ![image](assets/readme-images/deploy-to-heroku8.png)<br>
+
+## Testing
+### Manual Testing
+
+- Implementation : Username must be unique.
+- Expectation : If the user attempts to sign up with a username that already exists, they will recieve a validation error.
+- Test : I tried to sign up with a username that already exists.
+-  Result :  The validation error was present when I attempted a duplicate username entry. The test was successful.
+![image](assets/readme-images/signup-login-exists.png)
+
+
+- Implementation : Password needs to be uncommon 
+- Expectation : If the user tries to sign up using a password that is too common ie : 'password' or simialar to the username, they will recieve a validation error.
+- Test : I tried to sign up with the password as 'password'.
+- Result : The validation error was present when I attempted a common password entry. The test was successful.
+![image](assets/readme-images/signup-password-common.png)
+
+
+- Implementation : Sucessful sign in, navigate to homepage.
+- Expectation : When the user is logged into their account, they should be directed to the homepage.
+- Test : I logged into my account with the correct credentials.
+- Result : The site directed me to the homepage when I logged in correctly. The test was successful.
+![image][assets/readme-images/read-me-test-homepage.png]
+
+- Implementation : Logging in with incorrect credentials.
+- Expectation : If the user either the wrong username and password combination, they should recieve a validation error.
+- Test : I attempted to log in with an incorrect password. I then to log in with an incorrect username.
+- Result : The validation error was present when I attempted to log in with the incorrect credentials. The test was successful.
+![image][assets/readme-images/read-me-wrong-password.png]
+
+- Implementation : Cannot create a recipe with invalid fields
+- Expectation : If any of the form fields are left blank, validation errors will appear on the ones that are blank.
+- Test : To try and submit an empty recipe.
+- Result : The validation error was present when I attempted to create an empty recipe. The test was successful
+![image][assets/readme-images/read-me-testing-empty-form.png]
+
+- Implementation : To sucessfully create a recipe.
+- Expectation : The recipe should be submitted successfully and then the user should be directed to the homepage with their new recipe on the top left corner of the page.
+- Test : I created a recipe with an image of myself. 
+- Result : The recipe was submitted with no faults. I was directed back to the homepage with my recipe in view.
+![image][assets/readme-images/readme-testing-createrecipe.png]
+
