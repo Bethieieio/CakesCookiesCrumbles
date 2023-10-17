@@ -392,8 +392,8 @@ This is how I deployed the backend of this site to Heroku
 - Result : The recipes with the cookie category were the only ones that appeared on the page. All the other categories worked as they should. This test was sucessful.
 ![image](assets/readme-images/readme-testing-filters.png)
 
-- Implementation : 
-- Expectation : 
-- Test : 
-- Result : 
-![image]()
+- Implementation : Viewing my the users recipes, that that have written.
+- Expectation : When the user is logged in, they have a filter where they can see their own recipes that they have created.
+- Test : I used the 'Your Recipes' fitler on the filter bar at the top of the page. To see if my recipes are filtered out from the restof the other recipes.
+- Result : The recipes that I created were filtered from the all the rest. In the picture below, you can see that they are my recipes as the edit button is shown on the recipe box.
+![image](assets/readme-images/readme-testing-myrecipes-fitler.png)
