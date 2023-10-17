@@ -362,7 +362,8 @@ This is how I deployed the backend of this site to Heroku
 - Expectation : The user should not be allowed to edit any recipe other than their own. 
 - Test : I attempted to navigate to an edit recipe page on a recipe that I did not own.
 - Result : I was navigated away from the page. The only way to edit a recipe is to own it. Seeing pencil icon on a recipe on the homepage indicates that the recipe is yours and that it can be edited by you.
-> Navaigation happened to quick to take a screenshot.
+> Navaigation happened too quick to take a screenshot.
+
 ![image](assets/readme-images/readme-testing-edit-recipe-notmine.png)
 
 - Implementation : To delete a recipe.
