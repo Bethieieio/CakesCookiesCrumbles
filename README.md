@@ -374,13 +374,26 @@ This is how I deployed the backend of this site to Heroku
 ![image](assets/readme-images/readme-test-deleterecipe3.png)
 
 
-- Implementation :
-- Expectation :
+- Implementation : To return a paginated list of recipes.
+- Expectation : To receive the first ten recipes. 
+- Test : I navigated to the homepage and waited for the first ten to appear.
+- Result : The lastest ten recipes were shown.
+![image](assets/readme-images/readme-teesting-paginaton1.png)
+
+- Implementation : To load the next page when using the "see more recipes" button.
+- Expectation : More recipes will be fetched from the server and be shown to the user.
+- Test : T0 click the "see more recipes button".
+- Result : Older recipes showed up to the UI when I clicked the button.
+![image](assets/readme-images/readme-teesting-pagination2.png)
+
+- Implementation : Filtering recipes by their categories.
+- Expectation : When the user clicks on one of the 5 filter categories (5 when user is logged in, 3 if the user is not logged in), the recipes should filter to only the recipes of that chosen category.
+- Test : I logged in, then I chose the 'Cookie' category and clicked the 'Update' button below. I then made sure all the other categories worked as well.
+- Result : The recipes with the cookie category were the only ones that appeared on the page. All the other categories worked as they should. This test was sucessful.
+![image](assets/readme-images/readme-testing-filters.png)
+
+- Implementation : 
+- Expectation : 
 - Test : 
 - Result : 
-
-- Implementation :
-- Expectation :
-- Test : 
-- Result : 
-
+![image]()
