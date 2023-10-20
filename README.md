@@ -29,6 +29,8 @@ You can view Cakes, Cookies and Crumbles here (create your own recipe if you wan
 - [**Technologies Used**](#technologies-used)
 - [**Testing**](#testing)
 -[**Deployment to Heroku**](#deployment-to-heroku)
+-[**Deployment to Github**](#deployment-to-github)
+
 
     
 
@@ -371,7 +373,7 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 
 - Implementation : Filtering more than one category at once.
 - Expectation : If the user selects more than once category, then both categories will be shown on the homepage
-- Test : I selected two categorie, updated the page and they both displayed.
+- Test : I selected two categories, updated the page and they both displayed.
 - Result : All recipes with the chosen categories appeared on the paginated list.
 ![image](assets/readme-images/readme-testing-two-categories.png)
 
@@ -404,4 +406,13 @@ This is how I deployed the backend of this site to Heroku
 ![image](assets/readme-images/deploy-to-heroku7.png)<br>
 11. I added the Heroku app host to my origins for CORS.
 ![image](assets/readme-images/deploy-to-heroku8.png)<br>
+
+## Deployment to Github
+1. I went into my repository on Github.
+2. I went into the repository's settings.
+3. On the left hand side, there is a menu item called 'Pages'
+4. I made sure the Branch was on 'Main'
+5. I gave the page a title and clicked 'Save'
+6. I clicked the link to make sure it worked.
+7. I then copied the link and added it to the about section in my repository.
 
