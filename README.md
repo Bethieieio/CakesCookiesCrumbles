@@ -410,9 +410,9 @@ This is how I deployed the backend of this site to Heroku
 ## Deployment to Github
 1. I went into my repository on Github.
 2. I went into the repository's settings.
-3. On the left hand side, there is a menu item called 'Pages'
+3. On the left hand side, there is a menu item called 'Pages'.
 4. I made sure the Branch was on 'Main'
-5. I gave the page a title and clicked 'Save'
+5. I gave the page a title and clicked 'Save'.
 6. I clicked the link to make sure it worked.
 7. I then copied the link and added it to the about section in my repository.
 
