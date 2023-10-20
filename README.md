@@ -377,6 +377,40 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 - Result : All recipes with the chosen categories appeared on the paginated list.
 ![image](assets/readme-images/readme-testing-two-categories.png)
 
+- Implementation : Favouriting a recipe
+- Expectation : To be able to toggle on/off my favourite selection
+- Test : I favourited an item on and off by clicking the heart on the recipe.
+- Result : When I toggled the recipe to favourite it, the heart colour filled in pink. I checked to see if the recipe was in my favourites by selecting the favourites filter and the recipe that I favourited was fitlered in with the rest of my favourites. 
+![image](assets/readme-images/readme-unlike-0rating.png)
+![image](assets/readme-images/readme-liked-5rating.png)
+![image](assets/readme-images/readme-fave-recipe-in-fave-cat.png)
+
+
+- Implementation : 
+- Expectation : 
+- Test : 
+- Result 
+![image]()
+
+- Implementation : 
+- Expectation : 
+- Test : 
+- Result 
+![image]()
+
+- Implementation : 
+- Expectation : 
+- Test : 
+- Result 
+![image]()
+
+- Implementation : 
+- Expectation : 
+- Test : 
+- Result 
+![image]()
+
+
 
 [Back to top](#contents)
 
@@ -411,7 +445,7 @@ This is how I deployed the backend of this site to Heroku
 1. I went into my repository on Github.
 2. I went into the repository's settings.
 3. On the left hand side, there is a menu item called 'Pages'.
-4. I made sure the Branch was on 'Main'
+4. I made sure the Branch was on 'Main'.
 5. I gave the page a title and clicked 'Save'.
 6. I clicked the link to make sure it worked.
 7. I then copied the link and added it to the about section in my repository.
