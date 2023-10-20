@@ -385,12 +385,13 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 ![image](assets/readme-images/readme-liked-5rating.png)
 ![image](assets/readme-images/readme-fave-recipe-in-fave-cat.png)
 
-
-- Implementation : 
-- Expectation : 
-- Test : 
-- Result 
-![image]()
+- Implementation : Rating a recipe. 
+- Expectation : When the logged in user is viewing a recipe, they can click on the star button to rate recipe of they wish.
+- Test : I cliked on a recipe, clicked on the rating a button and rated the recipe 5 stars. 
+- Result : I returned back to the home page and saw that the recipe went from no rating to a 5 star rating.
+[image](assets/readme-images/readme-unlike-0rating.png)
+![image](assets/readme-images/readme-rating-popup.png)
+![image](assets/readme-images/readme-liked-5rating.png)
 
 - Implementation : 
 - Expectation : 
