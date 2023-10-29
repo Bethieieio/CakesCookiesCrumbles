@@ -397,11 +397,9 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 
 
 ## Deployment to Github
-1. I went into my repository on Github.
-2. I went into the repository's settings.
-3. On the left hand side, there is a menu item called 'Pages'.
-4. I made sure the Branch was on 'Main'.
-5. I gave the page a title and clicked 'Save'.
-6. I clicked the link to make sure it worked.
-7. I then copied the link and added it to the about section in my repository.
-
+1. I installed `gh-pages` into the frontend using `npm`.
+![image](assets/readme-images/readme-github-pages.png)
+2. I added the scripts required to deploy to github pages from my local machine.
+![image](assets/readme-images/readme-deploying-to-github-pages.png)
+3. I ran the script with `npm run deploy`, which built my React app and deployed to github for me.
+4. I went on to Github and confirmed my deployent was successful.
