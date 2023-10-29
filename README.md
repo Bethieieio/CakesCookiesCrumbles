@@ -28,7 +28,6 @@ You can view Cakes, Cookies and Crumbles here (create your own recipe if you wan
    - [Future Features](#future-features)
 - [**Technologies Used**](#technologies-used)
 - [**Testing**](#testing)
--[**Deployment to Heroku**](#deployment-to-heroku)
 -[**Deployment to Github**](#deployment-to-github)
 
 
