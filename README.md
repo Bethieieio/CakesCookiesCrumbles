@@ -397,9 +397,12 @@ I am over all happy with the results for the Lighthouse Testing. I would one day
 
 
 ## Deployment to Github
-1. I installed `gh-pages` into the frontend using `npm`.
+
+1. First, I cloned by repository from Github.
+![image](assets/readme-images/readme-clone-repo-frontend.png)
+2. I installed `gh-pages` into the frontend using `npm`.
 ![image](assets/readme-images/readme-github-pages.png)
-2. I added the scripts required to deploy to github pages from my local machine.
+3. I added the scripts required to deploy to github pages from my local machine.
 ![image](assets/readme-images/readme-deploying-to-github-pages.png)
-3. I ran the script with `npm run deploy`, which built my React app and deployed to github for me.
-4. I went on to Github and confirmed my deployent was successful.
+4. I ran the script with `npm run deploy`, which built my React app and deployed to github for me.
+5. I went on to Github and confirmed my deployent was successful.
